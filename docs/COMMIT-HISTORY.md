@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-16T07:58:02+00:00**.
+Exported at **2026-09-16T07:58:11+00:00**.
 
-History through `0f849237d24751dcc311a9dd0ab0c5a2f562b8e4`.
+History through `001c2a00bc6b0fe02e703b7d47f61f4de83c0218`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -204,8 +204,26 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Author timestamp: `2026-09-13T17:35:59+00:00`
 - Committer timestamp: `2026-09-13T17:35:59+00:00`
 
+## Bundle the full eligible catalog with live-first metadata and generated model directory
+
+- Commit: [`2f28501187ccd72c849a05de37c875d2e6173d8b`](https://github.com/arcacomputer/openclaw-concentrateai/commit/2f28501187ccd72c849a05de37c875d2e6173d8b)
+- Author timestamp: `2026-09-13T23:54:28+00:00`
+- Committer timestamp: `2026-09-13T23:54:28+00:00`
+
+## Add guided model setup with reviewed estimates and native cancellation proof
+
+- Commit: [`0043409b4273a37e12e80f526a5b94e47df27906`](https://github.com/arcacomputer/openclaw-concentrateai/commit/0043409b4273a37e12e80f526a5b94e47df27906)
+- Author timestamp: `2026-09-14T01:00:15+00:00`
+- Committer timestamp: `2026-09-14T01:00:15+00:00`
+
 ## docs: publish 717-case installed-plugin campaign snapshot
 
 - Commit: [`0f849237d24751dcc311a9dd0ab0c5a2f562b8e4`](https://github.com/arcacomputer/openclaw-concentrateai/commit/0f849237d24751dcc311a9dd0ab0c5a2f562b8e4)
 - Author timestamp: `2026-09-16T07:42:30+00:00`
 - Committer timestamp: `2026-09-16T07:42:30+00:00`
+
+## Merge tested 1.2.0 implementation and document final campaign
+
+- Commit: [`001c2a00bc6b0fe02e703b7d47f61f4de83c0218`](https://github.com/arcacomputer/openclaw-concentrateai/commit/001c2a00bc6b0fe02e703b7d47f61f4de83c0218)
+- Author timestamp: `2026-09-16T07:58:03+00:00`
+- Committer timestamp: `2026-09-16T07:58:03+00:00`

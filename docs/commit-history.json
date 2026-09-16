@@ -1,14 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T07:58:02+00:00",
-  "historyThrough": "0f849237d24751dcc311a9dd0ab0c5a2f562b8e4",
+  "generatedAt": "2026-09-16T07:58:11+00:00",
+  "historyThrough": "001c2a00bc6b0fe02e703b7d47f61f4de83c0218",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "001c2a00bc6b0fe02e703b7d47f61f4de83c0218",
+      "authorTime": "2026-09-16T07:58:03+00:00",
+      "committerTime": "2026-09-16T07:58:03+00:00",
+      "subject": "Merge tested 1.2.0 implementation and document final campaign"
+    },
     {
       "sha": "0f849237d24751dcc311a9dd0ab0c5a2f562b8e4",
       "authorTime": "2026-09-16T07:42:30+00:00",
       "committerTime": "2026-09-16T07:42:30+00:00",
       "subject": "docs: publish 717-case installed-plugin campaign snapshot"
+    },
+    {
+      "sha": "0043409b4273a37e12e80f526a5b94e47df27906",
+      "authorTime": "2026-09-14T01:00:15+00:00",
+      "committerTime": "2026-09-14T01:00:15+00:00",
+      "subject": "Add guided model setup with reviewed estimates and native cancellation proof"
+    },
+    {
+      "sha": "2f28501187ccd72c849a05de37c875d2e6173d8b",
+      "authorTime": "2026-09-13T23:54:28+00:00",
+      "committerTime": "2026-09-13T23:54:28+00:00",
+      "subject": "Bundle the full eligible catalog with live-first metadata and generated model directory"
     },
     {
       "sha": "6c12ccfad81b879f156a3b3432068b50e5578d7d",
