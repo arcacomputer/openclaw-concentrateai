@@ -1,6 +1,8 @@
 # Full-feature campaign: batch 01
 
-**Latest supplement:** [1.0.x release verification](RELEASE-1.0.0.md), including the original live tools/context, image, schema and reasoning evidence plus the 1.0.1 ClawHub publication and fresh registry installation. Provider code is unchanged in the metadata patch. Historical rows below remain unchanged and are not retroactively upgraded.
+**Latest campaign:** [2026-09-16 installed-plugin matrix](TEST-CAMPAIGN-2026-09-16.md), with all 717 planned cases accounted for, per-attempt outcomes, conflicting duplicates, exclusions, and exact tested-artifact identity. Coverage accounting includes blocked/inconclusive cases and is not an all-pass claim. Historical rows below remain unchanged and are not retroactively upgraded.
+
+**Earlier supplement:** [1.0.x release verification](RELEASE-1.0.0.md), including the original live tools/context, image, schema and reasoning evidence plus the 1.0.1 ClawHub publication and fresh registry installation. Provider code is unchanged in that metadata patch.
 
 Historical batch-publication author/committer timestamp: `2026-09-13T06:26:15+00:00`, not the latest documentation edit. The exact Git chronology is retained in [commit history](COMMIT-HISTORY.md).
 
