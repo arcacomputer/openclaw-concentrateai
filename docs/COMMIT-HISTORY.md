@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-16T07:42:09+00:00**.
+Exported at **2026-09-16T07:58:02+00:00**.
 
-History through `6c12ccfad81b879f156a3b3432068b50e5578d7d`.
+History through `0f849237d24751dcc311a9dd0ab0c5a2f562b8e4`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -203,3 +203,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`6c12ccfad81b879f156a3b3432068b50e5578d7d`](https://github.com/arcacomputer/openclaw-concentrateai/commit/6c12ccfad81b879f156a3b3432068b50e5578d7d)
 - Author timestamp: `2026-09-13T17:35:59+00:00`
 - Committer timestamp: `2026-09-13T17:35:59+00:00`
+
+## docs: publish 717-case installed-plugin campaign snapshot
+
+- Commit: [`0f849237d24751dcc311a9dd0ab0c5a2f562b8e4`](https://github.com/arcacomputer/openclaw-concentrateai/commit/0f849237d24751dcc311a9dd0ab0c5a2f562b8e4)
+- Author timestamp: `2026-09-16T07:42:30+00:00`
+- Committer timestamp: `2026-09-16T07:42:30+00:00`

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "snapshotAtUtc": "2026-09-16T07:36:36.881672+00:00",
-  "scope": "All planned cases accounted for, including blocked and inconclusive cases. Not all-pass certification. Additional older duplicate workers were active at snapshot.",
+  "snapshotAtUtc": "2026-09-16T07:56:52.277989+00:00",
+  "scope": "Final recorded outcomes after all parallel batches terminated. Includes blocked and inconclusive cases; not all-pass certification.",
   "testedArtifact": {
     "package": "concentrate-provider",
     "version": "1.2.0",
@@ -17,18 +17,18 @@
     "plannedCases": 717,
     "recordedCases": 717,
     "pendingCases": 0,
-    "recordedAttempts": 875,
-    "duplicateAttempts": 158,
-    "casesWithPassingAttempt": 540,
-    "casesWithConflictingStatuses": 12,
+    "recordedAttempts": 889,
+    "duplicateAttempts": 172,
+    "casesWithPassingAttempt": 542,
+    "casesWithConflictingStatuses": 15,
     "attemptStatuses": {
-      "passed": 639,
-      "failed-acceptance": 102,
-      "inconclusive": 92,
+      "passed": 647,
+      "failed-acceptance": 105,
+      "inconclusive": 93,
       "inconclusive-interrupted": 1,
       "upstream-rejected": 17,
       "blocked-synthetic-preflight": 1,
-      "blocked-baseline-not-passed": 23
+      "blocked-baseline-not-passed": 25
     },
     "uniqueModels": 176,
     "casesByFeature": {
@@ -38,9 +38,9 @@
       "reasoning": 125,
       "vision": 103
     },
-    "passingAttemptsIndependentlyRevalidated": 639
+    "passingAttemptsIndependentlyRevalidated": 647
   },
-  "sourceSnapshotSha256": "043d40c6c818dd49c947e201362c16d44e0203a0fbb93963e151f1db363ff246",
+  "sourceSnapshotSha256": "4a0c1d0d127d95c3d7ef3de685f451221842f2f291437fa555ba994a18f39bd9",
   "excluded": {
     "quarantinedGrokModels": 8,
     "nonChatUtility": "redact-v1"
@@ -18388,6 +18388,19 @@
             "receipts.json": "0202f06bda250a80f82f66518e667ba04fe8936b5822d461ecfde3d07267a567",
             "requests.json": "ba0d9017bfb1a74f091949a320230542493d6bef99fffa1204216d183fdf3185"
           }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "passed",
+          "recordedAtUtc": "2026-09-16T07:36:02.147721+00:00",
+          "forwarded": 1,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "bd36f009173b325af916851a0f33fd4cbee48c06f93d70d86a744b93d3aceeb6",
+            "result.json": "a1ce5733e45454f60a07aa5585d1619b6263c66b79706680524966df7049fdd1",
+            "receipts.json": "1d870e7be623fb3fd7e1fb17ca0d2fd2976cf41a6c3b35c073a9caeedd2ef9f5",
+            "requests.json": "64d6044d532d339f26a88c6646acc54e05e1c363692df4dd502913a96356c4f7"
+          }
         }
       ],
       "hasPassingAttempt": true,
@@ -18509,6 +18522,19 @@
             "result.json": "018b8a812c91aec39374b80234767560efb1f1ec8ee67d023bc53d48f4b18775",
             "receipts.json": "995511102767a5e89d1eed108301501a02b288703b2277fa79a7497b4fef2714",
             "requests.json": "fe5ab6728931e2006093c88925e4790ab3e1e0859288864f8be26d759be25c4d"
+          }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "failed-acceptance",
+          "recordedAtUtc": "2026-09-16T07:36:25.758184+00:00",
+          "forwarded": 2,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "5432e99399ff666eebd6e265fdae4562c56c1efea6f6dee734ef44413310b232",
+            "result.json": "a446bb4e1a28b33501183ac07c47bb491fea18d157302597e54f583f52477922",
+            "receipts.json": "8983c8fb7683d7f5331dda4528567cff80bc9646a84616a48cf2afafd469608d",
+            "requests.json": "0306d1b10d7b574a131c2b6466e3f2e2459bb27bd8451c73e594f9fb8530530a"
           }
         }
       ],
@@ -18632,6 +18658,19 @@
             "receipts.json": "64c8387f1f1bbb34c0f770cbe637662a89725a137b149d879a94f44d1a334ba2",
             "requests.json": "a5c8b51500d779d0d85eaeaf1bcdb62aff85e7e20245a68b9c6bdce3e468609e"
           }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "inconclusive",
+          "recordedAtUtc": "2026-09-16T07:36:49.364230+00:00",
+          "forwarded": 1,
+          "accountingComplete": false,
+          "evidenceSha256": {
+            "metadata.json": "f1c656818675165e4c00d3ca2fa852e03dfa53131781f7173783136145d2d3c5",
+            "result.json": "a4e3820db6fd0b39318261ae9d944cb5330b62d4a133739b9583dc86b6308a47",
+            "receipts.json": "df508e0556660643d0db582d97acad762d12ddb59e5cd0972f373d4b2eceb0bb",
+            "requests.json": "c8284584908cba35101fcbef7e3d489f8fb4a44c78a58651b523541683ed2094"
+          }
         }
       ],
       "hasPassingAttempt": false,
@@ -18656,10 +18695,23 @@
             "receipts.json": "954cb786f00504581bfe55926311e1ad0ba657ca2710b8e75978eb2ec0e2071a",
             "requests.json": "4a0829b52e048a682904f67ea142a113a03a7e810401dd164d4ee9fc4835514b"
           }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "passed",
+          "recordedAtUtc": "2026-09-16T07:36:04.455741+00:00",
+          "forwarded": 2,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "bf71475e6d21aa211e6a38896161836837967d507c697f10fdad466da3d3c144",
+            "result.json": "9075a65aa2fbb423ff035fbf1e73bba180bdb8cfe291e30f1c48c0162dc7eaf9",
+            "receipts.json": "c8a4833cc0be38d40f81194bc0f34d5867cf3175dd034f6d3c9c5271aef3ec8d",
+            "requests.json": "60c5dfb5bfff95e90b5a97414b7e91bcfd16f006d50cdb3bc99428649a2cf271"
+          }
         }
       ],
-      "hasPassingAttempt": false,
-      "hasConflictingStatuses": false
+      "hasPassingAttempt": true,
+      "hasConflictingStatuses": true
     },
     {
       "index": 2521,
@@ -18726,6 +18778,14 @@
           "forwarded": null,
           "accountingComplete": null,
           "evidenceSha256": {}
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "blocked-baseline-not-passed",
+          "recordedAtUtc": null,
+          "forwarded": null,
+          "accountingComplete": null,
+          "evidenceSha256": {}
         }
       ],
       "hasPassingAttempt": false,
@@ -18740,6 +18800,14 @@
       "attempts": [
         {
           "attemptOrdinal": 1,
+          "status": "blocked-baseline-not-passed",
+          "recordedAtUtc": null,
+          "forwarded": null,
+          "accountingComplete": null,
+          "evidenceSha256": {}
+        },
+        {
+          "attemptOrdinal": 2,
           "status": "blocked-baseline-not-passed",
           "recordedAtUtc": null,
           "forwarded": null,
@@ -18830,6 +18898,19 @@
             "receipts.json": "3dd7627eff6f342bf0b9e40a06c528e19b8b49f327fffcd696a74489997f4039",
             "requests.json": "04af3fd8966adcbcf02c2aa567ac93d3a9d9198d6dce9d5b7697c7b2941a5a08"
           }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "passed",
+          "recordedAtUtc": "2026-09-16T07:38:04.092425+00:00",
+          "forwarded": 2,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "b7437dc83a5466615f6e9f362e9eb4c63f295fa90b3ad9976d15b128a72a2f12",
+            "result.json": "812f6031800f48b0e14ade663bb5ae41080bfc49656b3f8d84401e25968f785e",
+            "receipts.json": "dfbbe9f41c2569f787136b7e80da3e24929480b1d34f8906d257b1cb059193d1",
+            "requests.json": "fd68a0a063dbb9f6f0891818c56f6718348b99c3ce1cbececf50db8eacb1c1e4"
+          }
         }
       ],
       "hasPassingAttempt": true,
@@ -18853,6 +18934,19 @@
             "result.json": "562a08dc5382c07861417f4f79d448b5cba6fdefdba39d467280b5248dc9eade",
             "receipts.json": "893a92504aba7e1597d76e30d43837b7abe3356b904234ccabb133a379395be5",
             "requests.json": "6e322976d537c1de546bbef720a56212b6c3313347ff9645bfcb8c07ac93a732"
+          }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "passed",
+          "recordedAtUtc": "2026-09-16T07:36:27.573559+00:00",
+          "forwarded": 1,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "8ba410f7a4bed9954e0432f9deaa497cdf78a0257dd6115bdb323875b4b36ec4",
+            "result.json": "caf70f01990f2ee1a02d8aad407996ad3f005190dfa531e98d47e843a195609b",
+            "receipts.json": "4bd9f20b6218bcd0db1efea21f78111bf4f03bc6b473805fc365bfd57ca86a91",
+            "requests.json": "7d3b957dc82c4d4da57e5175aff076fe85d0a42bdf82c230bbabf1cf8cb3db7c"
           }
         }
       ],
@@ -18939,10 +19033,23 @@
             "receipts.json": "5c25f968af5d882e84ef105989319cb18eba9779616fd0ce3110f5167222b8c3",
             "requests.json": "9bc93bf1ffc6097d2422e15e64200c0bb4db5cf4458d37b504be4e5dc5535dc9"
           }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "failed-acceptance",
+          "recordedAtUtc": "2026-09-16T07:38:24.147386+00:00",
+          "forwarded": 1,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "3eb9e23f3bf3d050b55ca3f43d6bc22b8b8370d7e46b1e807b6e52855de2d6e4",
+            "result.json": "f3a3e949ade9e1f2f8b02391c3ed17cda1f318a9ac4ef4801cc1b031c2799271",
+            "receipts.json": "f00d265843dc97b885ed4a455641d090a8c8cbb7913cf93cd162b20e632338eb",
+            "requests.json": "239c6b525396875102b66823ee2973dfa418d2ce278e526df36ce8beec29aeb9"
+          }
         }
       ],
       "hasPassingAttempt": true,
-      "hasConflictingStatuses": false
+      "hasConflictingStatuses": true
     },
     {
       "index": 2532,
@@ -18962,6 +19069,19 @@
             "result.json": "01cdb0b5e0b3559116d3b267554e6bd99c8a43aa9a6010964f9d12a32669d83b",
             "receipts.json": "127c6da5688ece1e719776150d1a23d3a05863787ac11f1512a2652d7d064ded",
             "requests.json": "3bceb7bbd717e5d0dbd373b863d21ba2498365c211e9ce34b4ad0850db457d5e"
+          }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "passed",
+          "recordedAtUtc": "2026-09-16T07:36:56.140361+00:00",
+          "forwarded": 2,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "5111a264e8875f16391430cd4df807950a63dfb2a7c33a3bab12849bc8efdf7c",
+            "result.json": "2fc2dbdbb67f5940f5bd7e55cb70df3057ead0891701165f4cfc7ac0206706cf",
+            "receipts.json": "dff76b209678824cd103f079cf800c8ce2e6b1081ec8c115e25f518fc3a76d53",
+            "requests.json": "177fab34d1b1b61c83222b7a714d2ac111624cc2a7970072c2ca904b6870eecc"
           }
         }
       ],
@@ -19048,6 +19168,19 @@
             "receipts.json": "677694a2578de486d922a7109b6545b531b5961d9ec98f3cb2583a3a06d6f680",
             "requests.json": "d9a039940d2fc04bf04c89af04c6d805d7e1ce99be8e7529d861f634c8b6eec6"
           }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "failed-acceptance",
+          "recordedAtUtc": "2026-09-16T07:38:47.913338+00:00",
+          "forwarded": 2,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "26962641f186ad434aff0efd9b859324438d5d240b86965ce733cb81a82a47ba",
+            "result.json": "a74d876dcef46ddaf27319f77b066fabe9214d418fd1bd29f796708effb4f7b3",
+            "receipts.json": "85f66bea527a33b64aba31f17d35f36dcca47669b886a43506632ada33c28a43",
+            "requests.json": "aa660a349bb22e73b82e8260fdebc216f81838a32eded559cefd1d617f0879b9"
+          }
         }
       ],
       "hasPassingAttempt": false,
@@ -19072,10 +19205,23 @@
             "receipts.json": "0536999e717aa8494d6cea81331f8d3f1d02ad885220857da3766807a647513c",
             "requests.json": "4930fa96f5c093cdcc2082fe8613d3dc09debfcc1084ca9f7b60c0061bdaeb79"
           }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "passed",
+          "recordedAtUtc": "2026-09-16T07:37:18.739923+00:00",
+          "forwarded": 2,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "a7e8a8788adb05f8962bef46a2b11c45b71fceb075ca9fd5a6af91de8881f83e",
+            "result.json": "985603ac70089c787b6f598063f9526b60ca608eb957e7224a6145bf1c603024",
+            "receipts.json": "2940ae9a7aa32320c44d25c534434ea4506f5a2bcb67e5a73e83a405be4f3ee2",
+            "requests.json": "405fe697a203743cc102df68d21a02f17c4e8c8310770ed820bcef0f623a451a"
+          }
         }
       ],
-      "hasPassingAttempt": false,
-      "hasConflictingStatuses": false
+      "hasPassingAttempt": true,
+      "hasConflictingStatuses": true
     },
     {
       "index": 2537,
@@ -19157,6 +19303,19 @@
             "receipts.json": "ad3b1521437628a11d63b55cc24b67871bf49584664619f4ba9b59b80c116ac3",
             "requests.json": "8b55a37cd74ed980313da619438454cfc6a5b024e391453e7987e7cfe940d5eb"
           }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "passed",
+          "recordedAtUtc": "2026-09-16T07:39:09.992312+00:00",
+          "forwarded": 1,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "fc30165c754b0241a325e39994e2826b452e8d807d2e76bb2f6860da324b4ec7",
+            "result.json": "6f10cd5eeeaeb0e396d872d7ecac21c0b43476b15546866b50073c7dfce53736",
+            "receipts.json": "78f334595cbebdf31bd7aa925b275edc2633e66e8ad171125823666a8e017a51",
+            "requests.json": "baa6e21ecc96cf0748a97adedacb0dff34a0c9a2976468cb6da6a22c95d44e58"
+          }
         }
       ],
       "hasPassingAttempt": true,
@@ -19181,10 +19340,43 @@
             "receipts.json": "9711ddb62f6b29ea06ed52df8813e07d2c77b30a0392d8c8e8118bb1a8b9a777",
             "requests.json": "198ec2cff64e50ca17b74e76f5127b577e18d32ac25dcb3ee9eac2f716beeff3"
           }
+        },
+        {
+          "attemptOrdinal": 2,
+          "status": "passed",
+          "recordedAtUtc": "2026-09-16T07:38:25.491900+00:00",
+          "forwarded": 1,
+          "accountingComplete": true,
+          "evidenceSha256": {
+            "metadata.json": "97ea3f150db5bd2aa65068f1dd3ee3213ad5d12e5aa8eaccbd076966e3019c41",
+            "result.json": "d1eae64cb701ea9808596611d1781c38d28b9f4ed45cfea7b6fa2767874cad42",
+            "receipts.json": "916841b137b1aa3fd8037b511a09cd7e009f834c2a0227620f29f8ae2a4e9922",
+            "requests.json": "3386672407614a4a21c314ea9b179aa490b61a7d0a3d27efa3e320ff43ff3ed4"
+          }
         }
       ],
       "hasPassingAttempt": true,
       "hasConflictingStatuses": false
+    }
+  ],
+  "cleanup": [
+    {
+      "batch": "parallel-20260916",
+      "finishedAtUtc": "2026-09-16T07:39:23.335375+00:00",
+      "providerCleanupVerified": true,
+      "remainingOwnedWorkers": 0
+    },
+    {
+      "batch": "acceleration-20260916",
+      "finishedAtUtc": "2026-09-16T07:22:54.452709+00:00",
+      "providerCleanupVerified": true,
+      "remainingOwnedWorkers": 0
+    },
+    {
+      "batch": "final-nine-20260916",
+      "finishedAtUtc": "2026-09-16T07:31:35.559325+00:00",
+      "providerCleanupVerified": true,
+      "remainingOwnedWorkers": 0
     }
   ]
 }

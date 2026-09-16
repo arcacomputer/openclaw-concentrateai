@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T07:42:09+00:00",
-  "historyThrough": "6c12ccfad81b879f156a3b3432068b50e5578d7d",
+  "generatedAt": "2026-09-16T07:58:02+00:00",
+  "historyThrough": "0f849237d24751dcc311a9dd0ab0c5a2f562b8e4",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "0f849237d24751dcc311a9dd0ab0c5a2f562b8e4",
+      "authorTime": "2026-09-16T07:42:30+00:00",
+      "committerTime": "2026-09-16T07:42:30+00:00",
+      "subject": "docs: publish 717-case installed-plugin campaign snapshot"
+    },
     {
       "sha": "6c12ccfad81b879f156a3b3432068b50e5578d7d",
       "authorTime": "2026-09-13T17:35:59+00:00",

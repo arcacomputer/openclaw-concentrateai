@@ -1,8 +1,10 @@
 # Release gates
 
-Current package: **concentrate-provider 1.1.0**, published on [ClawHub](https://clawhub.ai/plugins/concentrate-provider). See the [release report](RELEASE-1.1.0.md), [exact evidence](CLAWHUB-RELEASE-1.1.0.json) and [migration/rollback guide](MIGRATING.md). The [1.0.1 gates](RELEASE-GATES-1.0.1.md) and original live/model histories remain archived.
+Current source: **concentrate-provider 1.2.0 candidate**. Last verified registry distribution: **1.1.0**, published on [ClawHub](https://clawhub.ai/plugins/concentrate-provider). See [1.2.0 source evidence and outstanding release gates](RELEASE-1.2.0.md), the [1.1.0 release report](RELEASE-1.1.0.md), [exact distribution evidence](CLAWHUB-RELEASE-1.1.0.json) and [migration/rollback guide](MIGRATING.md). The [1.0.1 gates](RELEASE-GATES-1.0.1.md) and original histories remain archived.
 
-## Verified release
+The final [1.2.0 campaign](TEST-CAMPAIGN-2026-09-16.md) accounts for 717 planned cases across 176 models, with non-pass outcomes and conflicts preserved. It does not establish a new registry release. A fresh candidate pack, validation, authorized publication and registry-install readback remain required.
+
+## Verified 1.1.0 release (historical distribution evidence)
 
 - **Identity: passed.** GitHub renamed in place. ClawHub's owner name-repair dry run returned admin-only, so the authorized new-package fallback uses plugin ID `concentrate-provider`. The provider/model prefix remains `concentrate/`.
 - **Code: passed.** New identity regressions reproduced RED against the previous source. All 41 package checks passed; provider implementation/model data remain unchanged.

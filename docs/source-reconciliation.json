@@ -1,0 +1,61 @@
+{
+  "verifiedAtUtc": "2026-09-16T07:57:16.875428+00:00",
+  "testedSourceCommit": "0043409b4273a37e12e80f526a5b94e47df27906",
+  "testedArtifactSha256": "6b6b13a9e17de626f9c09c199c03d398c8998824ae6dd47a396101d1827b5220",
+  "scope": "Each listed current runtime/package file matches both the tested source commit and the retained installed artifact byte-for-byte. Documentation updates change a newly packed artifact digest. This is offline identity verification, not a new build, live test or registry release.",
+  "files": [
+    {
+      "file": "index.mjs",
+      "sha256": "8940344fe0a5e7dd61d9e361af4b6c41fad7c69fcd24a1fcd1006422d81bdcfb"
+    },
+    {
+      "file": "package.json",
+      "sha256": "761af593b223c71c0301da4fb31132704d1c165304b705051fecfbaab1b9c227"
+    },
+    {
+      "file": "openclaw.plugin.json",
+      "sha256": "b6e06608aaf13b2f603ac363dd57f25ee10eaff2c381ce4bcd5f67686dc2e785"
+    },
+    {
+      "file": "src/catalog-maintenance.mjs",
+      "sha256": "e988871c857bc4e2af371567dc7c081976e71158576e6b7e29ac56a079064614"
+    },
+    {
+      "file": "src/catalog-meta.json",
+      "sha256": "6a76bb6706c33edd6a9e73dac7789f21e20d4a6b5899577168a4d90f3416f40d"
+    },
+    {
+      "file": "src/catalog.mjs",
+      "sha256": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2"
+    },
+    {
+      "file": "src/cli.mjs",
+      "sha256": "2b389fd8f5ec2b1885f7dc3c548d8f58d2f860deb1bfcdb5fa9cea7434f9bd4e"
+    },
+    {
+      "file": "src/pricing.mjs",
+      "sha256": "4d5f0c4661ff80bb7c7106433c94b61cb18afa5045cc0180a4d1fe7df264f941"
+    },
+    {
+      "file": "src/provider.mjs",
+      "sha256": "45e6df7798be79571f341175c55cdfc09d61d037cb07c5bb1e504d3bd828b927"
+    },
+    {
+      "file": "src/seed.json",
+      "sha256": "bc9e1b2ba3ba8a20a857e49df5dfce9300093eb8d746df00ac8d633087e3d8a7"
+    },
+    {
+      "file": "src/setup.mjs",
+      "sha256": "d4fdd5656c645ce3337a970497cfe288d4c045b9c5172cb9031063983d04d03d"
+    }
+  ],
+  "checks": {
+    "runtimeAndPackageFileIdentity": true,
+    "finalPassingAttemptsRevalidated": 647,
+    "previousPublishedAttemptsPreserved": true,
+    "publicDatasetConsistency": true,
+    "checkerNegativeCasesRejected": 5,
+    "modelMatrixGeneratedFromDataset": true,
+    "newLiveInference": false
+  }
+}

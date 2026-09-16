@@ -25,6 +25,7 @@ Official ClawHub reference: <https://docs.openclaw.ai/clawhub>. Follow [the repo
 Read these before changing code or making compatibility claims:
 
 - `README.md`: installation, credentials and explicit cost configuration.
+- `CHANGELOG.md`, `docs/TESTING.md`, `docs/TEST-RESULTS.md`: improvements, exact test methodology and final per-model outcomes. The campaign JSON is the current attempt-level source of truth; do not rewrite historical smoke evidence to match it.
 - `package.json`, `openclaw.plugin.json`, `index.mjs`: packaging, permissions and registration.
 - `src/provider.mjs`: provider/auth/catalog integration and pricing gates.
 - `src/catalog.mjs`, `src/seed.json`: catalog projection and offline fallback.
@@ -39,11 +40,11 @@ Check Git status and HEAD first. Preserve other agents' uncommitted changes. Use
 
 ## Current product boundary
 
-The current `concentrate-provider` 1.1.0 distribution has verified publication, clean registry scans, fresh installation, configuration migration and rollback. Its distinct plugin ID does not change the `concentrate/` model namespace. See `docs/RELEASE-1.1.0.md` and its machine-readable proof; do not enable the historical and new plugins together.
+Current source is the `concentrate-provider` 1.2.0 candidate, including full fallback metadata and guided setup. The last verified distribution is 1.1.0, with publication, clean registry scans, fresh installation, migration and rollback evidence. Its distinct plugin ID does not change the `concentrate/` model namespace. See `docs/RELEASE-1.2.0.md` for source evidence and outstanding release gates, and `docs/RELEASE-1.1.0.md` for historical distribution proof. Do not enable the historical and new plugins together.
 
 The historical 1.0.x release has verified ClawHub publication, clean registry scans, fresh registry installation, native model registration and representative live tools/context, vision, reasoning and schema evidence. Version 1.0.1 is a documentation/metadata patch with unchanged provider code. This is not universal model or all-platform certification, nor a cryptographically attested release. Consult the latest release report and dated histories; preserve all historical error/inconclusive/quarantine states.
 
-Known remaining boundaries include inconsistent upstream image/output behavior, broad per-model feature coverage and reconciliation of ambiguous earlier charges. Real parallel tools and fresh-user context now have installed-package evidence; standalone or simulated gate tests still cannot substitute for live proof. The package remains private to npm to prevent accidental publication. No npm or ClawHub release is implied by public MIT source.
+The final 717-case plan is accounted for, including blocked and inconclusive cases. Remaining boundaries include non-pass/conflicting outcomes, inconsistent upstream image/output behavior and reconciliation of ambiguous charges. Real parallel tools and fresh-user context have separate representative installed-package evidence, not all-model certification. Standalone or simulated tests cannot substitute for live proof. The package remains private to npm; no new npm or ClawHub release is implied by public MIT source.
 
 ## Execution: Blaxel, not the control-plane host
 
