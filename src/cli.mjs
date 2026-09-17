@@ -86,6 +86,8 @@ export function registerConcentrateCli(program, configIO) {
         if (!readline) {
           readline = createInterface({ input: process.stdin, output: process.stderr });
           readline.on('SIGINT', interrupt);
+          // EOF must settle a pending question, just like Ctrl-C.
+          readline.once('close', interrupt);
         }
         return readline.question(prompt, { signal });
       };
@@ -121,6 +123,10 @@ export function registerConcentrateCli(program, configIO) {
           },
           confirm: async () => (await ask('Save these estimates? Type yes to confirm: ')).toLowerCase() === 'yes',
         });
-      } finally { readline?.close(); }
+      } finally {
+        // Our normal cleanup is not user cancellation and must not mask errors.
+        readline?.off('close', interrupt);
+        readline?.close();
+      }
     }));
 }

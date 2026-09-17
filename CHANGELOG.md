@@ -2,9 +2,24 @@
 
 This history separates product changes from test infrastructure. It does not imply registry publication. See [release gates](docs/RELEASE-GATES.md) for distribution status and [testing](docs/TESTING.md) for evidence boundaries.
 
-## 1.2.0 source candidate
+## 1.2.1 qualification candidate
 
-Implemented in commits [2f28501](https://github.com/arcacomputer/openclaw-concentrateai/commit/2f28501) and [0043409](https://github.com/arcacomputer/openclaw-concentrateai/commit/0043409), now incorporated into main with their original Git history preserved.
+### Precision-review follow-up (unreleased)
+
+- Fixed interactive EOF cancellation in guided setup without masking ordinary validation errors.
+- Removed text-based HTTP/payment inference from the legacy host test adapter; unknown execution failures still stop orchestration.
+- Repaired registry-facing README links and version formatting against the existing package checks.
+- Added a deterministic no-spend retest planner for unresolved/conflicting cases and positive controls, with separate feature-meaning and format observations.
+- Added regression tests and a [precision review](docs/PRECISION-REVIEW-2026-09-16.md). The original 717-case campaign remains immutable; these changes do not claim new model passes.
+- Added separate plain-text, strict-schema, tool-value, image-content/format and reasoning-configuration acceptance checks, with RED/GREEN regressions and a [narrow production support contract](docs/PRODUCTION-SUPPORT.md).
+- Corrected the native setup verifier to compare live model discovery with current public metadata, not the dated bundled catalog. Added regressions rejecting stale rows, duplicate rows and inconsistent counts while allowing legitimate catalog changes.
+- Corrected the registry status: 1.2.0 was already published with the historical campaign artifact. This patch uses a new immutable version, not a replacement upload. Track actual qualification/publication in [the 1.2.1 report](docs/RELEASE-1.2.1.md).
+
+## 1.2.0 published distribution
+
+### Original catalog and setup implementation
+
+Implemented in commits [2f28501](https://github.com/arcacomputer/openclaw-concentrateai/commit/2f28501) and [0043409](https://github.com/arcacomputer/openclaw-concentrateai/commit/0043409), incorporated into main with their original Git history preserved.
 
 ### Product improvements
 

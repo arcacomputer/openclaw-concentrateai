@@ -1,10 +1,12 @@
 # Provenance and exact timestamps
 
-## Current campaign and source reconciliation
+## Campaign and original source reconciliation
 
 The [final 2026-09-16 campaign](TEST-CAMPAIGN-2026-09-16.md) identifies its exact tested source and artifact digest, retains every recorded attempt, and distinguishes evidence timestamps from publication. Main incorporates that tested implementation with its original Git history. Runtime/package bytes were compared with the retained installed artifact; later documentation edits mean a newly packed archive would have a different digest. No new registry publication or fresh live campaign is implied.
 
 See [what changed](../CHANGELOG.md) and [methodology](TESTING.md). The earlier in-flight report remains in Git history at `0f849237d24751dcc311a9dd0ab0c5a2f562b8e4`.
+
+Later correctness changes are recorded in the [precision review](PRECISION-REVIEW-2026-09-16.md) with their own [proof](precision-proof-2026-09-16.json). Historical source/file hashes are not relabeled to describe the changed candidate.
 
 ## Historical publication record
 

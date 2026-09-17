@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "scope": "Installed 1.2.1 candidate; gateway RPC text/streaming smoke only, not all-feature gateway qualification or registry release",
+  "atUtc": "2026-09-17T04:22:11.398866+00:00",
+  "environment": {
+    "node": "24.16.0",
+    "openclaw": "2026.9.4",
+    "os": "Linux"
+  },
+  "artifactSha256": "88fc47de47eccf0f37d839484e607e62d7d0e1d7568eb3515f8d473f8e7ac4df",
+  "harnessSha256": "c4e87b0c5f2a41fe5205135300ed356984121d529c3c5076bfa670c35295cd5d",
+  "counts": {
+    "planned": 2,
+    "passed": 2,
+    "upstreamForwards": 2
+  },
+  "cleanupVerified": true,
+  "cases": [
+    {
+      "index": 52001,
+      "model": "gpt-4.1",
+      "feature": "basic-response",
+      "status": "passed",
+      "accountingComplete": true,
+      "forwarded": 1,
+      "artifactSha256": "88fc47de47eccf0f37d839484e607e62d7d0e1d7568eb3515f8d473f8e7ac4df",
+      "harnessSha256": "c4e87b0c5f2a41fe5205135300ed356984121d529c3c5076bfa670c35295cd5d",
+      "rawEvidenceSha256": {
+        "input-bound.json": "175dc97112db431e73e1dfba1833826437af98604eaf007485dc4c06abd5d1ba",
+        "metadata.json": "a913dc8e26c7bafa7443029672c7a63b42e7f86fdadc23c12ef8d65260a9d69b",
+        "live-gateway-route.json": "a9cac71402e107f528c07d4195848d995343478749d7b121e73cdadd798ff30c",
+        "reservation.json": "387f3bd492495ae336b6e245fc7ec16897486e90887cdc1a046a57a3a4d60641",
+        "live-gateway-stop.json": "d06816367eac83c60672b2a0f6bc7c43b8ec2d2c84c2a24808855b444ceb0e41",
+        "live-gateway-client.json": "fb33ebe163e2cfb02595029177ed0883df57d59791bc2fcd792122ac1043c6c9",
+        "live-gateway-isolation.json": "0cdd730d8ce4d1babdbefaf5f1e0354c9a16d34fb2577ddce117921675346a83",
+        "requests.json": "8da310a0e55d9a372a2ec609054924bcb1e3d5faf990e03059f726155ea61acc",
+        "feature-observations.json": "1c7ba23be11e576d8af81c3dee01fab9e63988532cee73cf5d345e13284a543e",
+        "live-child-isolation.json": "65a9a79e5965c5927ef3059fa79b0e71cd0985a98ce952f65345d471cf2a4bf6",
+        "live-terminal-candidate-0.json": "e368a05cfcb38d343de3bef1815c3669bf5fe1cc69a6703d8da76b174803891e",
+        "live-raw-final-0.json": "6d0d3f22675989dc738bd3c9302c98c74ee001d04daeb4b951b1fe326c68b815",
+        "live-host.json": "b1853eeeab0ceb755e00e70439e673989a72da0556031c9565597189eae8d4a1",
+        "sequencing.json": "0de777a7ea1aaef5f722ecafe5b40eb4d7354f95d1bfe45681d17abf49a3f378",
+        "result.json": "340a6e7a84279ac2c1d221a7b69063f40cce48577148426667e9ecb6202f22a6",
+        "receipts.json": "033987ea6a6200f55f179af1d4f1aa45778572f2e2d71d54fa64c35f992da6a7",
+        "dispatch-0.json": "763a75c438dbb1fe489ecbb2c682f53dbfe031ca8ee6ba54204761be499d7eda",
+        "live-upstream-0.json": "40410aff004dcd99b4ac70b86146fe4887354fd87c3ab5c55b92f7ab61a1494e",
+        "live-tool-value.json": "a9b1f2633bb71a776161186cf51e3cb0f00c5f3c07e360bcdd3392b60d7cae36"
+      },
+      "route": {
+        "runIdPresent": true,
+        "status": "ok",
+        "localFallback": false,
+        "rawStdoutSha256": "1e0eef90a7bfa452db5f8d53308aacd41a23bb0b36f83ee09e77d85f215a0b02"
+      },
+      "atUtc": "2026-09-17T04:21:39.383984+00:00"
+    },
+    {
+      "index": 52002,
+      "model": "gemini-2.5-flash",
+      "feature": "basic-response",
+      "status": "passed",
+      "accountingComplete": true,
+      "forwarded": 1,
+      "artifactSha256": "88fc47de47eccf0f37d839484e607e62d7d0e1d7568eb3515f8d473f8e7ac4df",
+      "harnessSha256": "c4e87b0c5f2a41fe5205135300ed356984121d529c3c5076bfa670c35295cd5d",
+      "rawEvidenceSha256": {
+        "input-bound.json": "58cab820658fd2fbb674cecb2db6020473e524a6e097678a6a8feca1981926c4",
+        "metadata.json": "023c3baddc0f3ee4bcff320662d5c4331f37d60992c5dd2150ed485d1d3b692a",
+        "live-gateway-route.json": "dcb24f721fc66038c1ba350ebd380fb0677e407470effaec23f9c067c626e89c",
+        "reservation.json": "aa4af6d1696043211abd0ae76855285e3e5d1b53c7c4877e72bfbc1fd7deea75",
+        "live-gateway-stop.json": "dfc55968f56d719a79043b8cda073e9f68933e07940e51f5409bb382eeb6d67c",
+        "live-gateway-client.json": "b686746caf20f835d3aaa9ddf090b9e22c1fa73a632faf7c98468b715d684eee",
+        "live-gateway-isolation.json": "58db4557da1546ffbb7b6e9e34226142754dc9cd376372dd7056861c421c325f",
+        "requests.json": "65443d4a2719db8a41c6a002ebe14703eead54f7c757c7f3343fc03e1f8472a5",
+        "feature-observations.json": "abe43cd47f651deb4b0ecc397ed984f89ff8f6d585aa5febe2fcf0ddb74c3656",
+        "live-child-isolation.json": "3e8243c7de922a51b3f9201fb7260cbf6429f2d343d96ceb6d089bc36da75554",
+        "live-terminal-candidate-0.json": "365ae7570fdfbf2d537bd4579a450b24adae1ada8a9d52bd4d19459a76fc624e",
+        "live-raw-final-0.json": "5605c6ca83c3e38020faed160a231e8fc1e75c09dcc1a21a26599afb5d488b6a",
+        "live-host.json": "43dcaaaffdb77a23bc2c1c02a84afd281c1246de0ae5575f445e0272c8c99e46",
+        "sequencing.json": "2580048b012f10f77643994e616f6bb59d11d730a183a29d233ac00fa34125f9",
+        "result.json": "e1b9fa726067c0490f50bb1de023c2492c809597313cdf415e65f044b200d43f",
+        "receipts.json": "813d8e89b6a495f8a7afa3ea717b3aee0abb77cff902a39af9b5a23e625d13a6",
+        "dispatch-0.json": "4a9eb2e14b7215e462b2d9e5e47e85713ef8755e445871f1b0f16a6e097d393a",
+        "live-upstream-0.json": "5caf4902de96e04a9171ab6c31778d78ab4181d5ec0a99c327687defe1a662e3",
+        "live-tool-value.json": "26171b25ce3e903b9c1f483cc9be25f08aa460f99bb368497daf8e8972ed4586"
+      },
+      "route": {
+        "runIdPresent": true,
+        "status": "ok",
+        "localFallback": false,
+        "rawStdoutSha256": "1851430bed78d88611b848ff6051013525118fb3bff56493406fa23b071fab8c"
+      },
+      "atUtc": "2026-09-17T04:22:04.391125+00:00"
+    }
+  ]
+}

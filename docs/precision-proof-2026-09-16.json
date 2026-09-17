@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "scope": "Focused candidate correctness, offline planning, synthetic SDK transport and native Linux package/setup verification; not a new paid model campaign or registry release",
+  "baseCommit": "9be5801e5c1dce08344f52d91fdb5c822b60bba3",
+  "candidateState": "Uncommitted changes identified by file and artifact digests; do not treat baseCommit as the tested candidate SHA",
+  "completedAtUtc": "2026-09-16T15:55:08.003Z",
+  "execution": {
+    "provider": "Blaxel",
+    "os": "Linux",
+    "pinnedNode": "24.16.0",
+    "pinnedOpenClaw": "2026.9.4",
+    "maxConcurrentWorkers": 1,
+    "sequentialWorkers": 2,
+    "ramMiBPerWorker": 8192,
+    "ttlMinutesPerWorker": 10,
+    "cleanupReserveSeconds": 120,
+    "paidInferenceRequests": 0,
+    "computeCostIsNotReconciled": true
+  },
+  "finalExecution": {
+    "status": "completed",
+    "exitCode": 0
+  },
+  "checks": {
+    "sourceSuite": {
+      "passed": 60,
+      "failed": 0
+    },
+    "syntheticTransport": {
+      "passed": 8,
+      "failed": 0
+    },
+    "newPlannerTests": {
+      "passed": 3,
+      "failed": 0,
+      "includedInSourceSuite": true
+    },
+    "syntax": true,
+    "catalogSnapshot": true,
+    "nativeHeadless": {
+      "installedFilesMatched": 13,
+      "bundled": 184,
+      "live": 184,
+      "headlessPreview": true,
+      "guardedApply": true,
+      "staleReviewRefused": true,
+      "primaryPreserved": true,
+      "envReferencePreserved": true,
+      "unselectedCostsPreserved": true,
+      "memoryPreserved": true
+    },
+    "nativeTerminal": [
+      {
+        "label": "tty-decline",
+        "exitCode": 0,
+        "signal": 0,
+        "promptsAnswered": 7,
+        "expectedPrompts": 7,
+        "configUnchanged": true,
+        "fault": null
+      },
+      {
+        "label": "tty-save",
+        "exitCode": 0,
+        "signal": 0,
+        "promptsAnswered": 7,
+        "expectedPrompts": 7,
+        "configUnchanged": false,
+        "fault": null
+      },
+      {
+        "label": "tty-interrupt",
+        "exitCode": 130,
+        "signal": 0,
+        "promptsAnswered": 1,
+        "expectedPrompts": 1,
+        "configUnchanged": true,
+        "fault": null
+      },
+      {
+        "label": "tty-eof",
+        "exitCode": 130,
+        "signal": 0,
+        "promptsAnswered": 1,
+        "expectedPrompts": 1,
+        "configUnchanged": true,
+        "fault": null
+      }
+    ]
+  },
+  "nativeCommandResults": [
+    {
+      "label": "install",
+      "startedAt": "2026-09-16T15:54:30.749Z",
+      "finishedAt": "2026-09-16T15:54:33.055Z",
+      "exitCode": 0
+    },
+    {
+      "label": "plugin-list",
+      "startedAt": "2026-09-16T15:54:33.055Z",
+      "finishedAt": "2026-09-16T15:54:33.815Z",
+      "exitCode": 0
+    },
+    {
+      "label": "initial-validate",
+      "startedAt": "2026-09-16T15:54:33.819Z",
+      "finishedAt": "2026-09-16T15:54:34.726Z",
+      "exitCode": 0
+    },
+    {
+      "label": "models-offline",
+      "startedAt": "2026-09-16T15:54:34.727Z",
+      "finishedAt": "2026-09-16T15:54:37.138Z",
+      "exitCode": 0
+    },
+    {
+      "label": "models-live",
+      "startedAt": "2026-09-16T15:54:37.141Z",
+      "finishedAt": "2026-09-16T15:54:39.321Z",
+      "exitCode": 0
+    },
+    {
+      "label": "preview",
+      "startedAt": "2026-09-16T15:54:39.325Z",
+      "finishedAt": "2026-09-16T15:54:41.490Z",
+      "exitCode": 0
+    },
+    {
+      "label": "wrong-review",
+      "startedAt": "2026-09-16T15:54:41.493Z",
+      "finishedAt": "2026-09-16T15:54:43.831Z",
+      "exitCode": 1
+    },
+    {
+      "label": "apply",
+      "startedAt": "2026-09-16T15:54:43.834Z",
+      "finishedAt": "2026-09-16T15:54:46.250Z",
+      "exitCode": 0
+    },
+    {
+      "label": "after-validate",
+      "startedAt": "2026-09-16T15:54:46.253Z",
+      "finishedAt": "2026-09-16T15:54:47.158Z",
+      "exitCode": 0
+    },
+    {
+      "label": "second-preview",
+      "startedAt": "2026-09-16T15:54:47.160Z",
+      "finishedAt": "2026-09-16T15:54:50.415Z",
+      "exitCode": 0
+    },
+    {
+      "label": "stale-review",
+      "startedAt": "2026-09-16T15:54:50.417Z",
+      "finishedAt": "2026-09-16T15:54:53.159Z",
+      "exitCode": 1
+    },
+    {
+      "label": "native-models",
+      "startedAt": "2026-09-16T15:54:53.161Z",
+      "finishedAt": "2026-09-16T15:54:58.114Z",
+      "exitCode": 0
+    }
+  ],
+  "artifact": {
+    "name": "concentrate-provider-1.2.0.tgz",
+    "sha256": "0641519dc91d821d684a48af071d3aedf05f3ac8e7254e37f9626c697e51ed81",
+    "files": {
+      "LICENSE": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4",
+      "src/catalog-meta.json": "6a76bb6706c33edd6a9e73dac7789f21e20d4a6b5899577168a4d90f3416f40d",
+      "openclaw.plugin.json": "b6e06608aaf13b2f603ac363dd57f25ee10eaff2c381ce4bcd5f67686dc2e785",
+      "package.json": "761af593b223c71c0301da4fb31132704d1c165304b705051fecfbaab1b9c227",
+      "src/seed.json": "bc9e1b2ba3ba8a20a857e49df5dfce9300093eb8d746df00ac8d633087e3d8a7",
+      "README.md": "30f1a3cdb49dbc3eeae72a7870858545d800f0a85cf379d8aa810be0e7d145a7",
+      "src/catalog-maintenance.mjs": "e988871c857bc4e2af371567dc7c081976e71158576e6b7e29ac56a079064614",
+      "src/catalog.mjs": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2",
+      "src/cli.mjs": "57904aadf9ba9537491a90d278c11bd17eb6a06ff549447fce36c54ccf2408aa",
+      "index.mjs": "8940344fe0a5e7dd61d9e361af4b6c41fad7c69fcd24a1fcd1006422d81bdcfb",
+      "src/pricing.mjs": "4d5f0c4661ff80bb7c7106433c94b61cb18afa5045cc0180a4d1fe7df264f941",
+      "src/provider.mjs": "45e6df7798be79571f341175c55cdfc09d61d037cb07c5bb1e504d3bd828b927",
+      "src/setup.mjs": "d4fdd5656c645ce3337a970497cfe288d4c045b9c5172cb9031063983d04d03d"
+    },
+    "currentPackageFilesMatch": true
+  },
+  "changedCodeAndTestFileDigests": {
+    "src/cli.mjs": "57904aadf9ba9537491a90d278c11bd17eb6a06ff549447fce36c54ccf2408aa",
+    "scripts/openclaw-live-adapter.mjs": "780cf79759fadacf0c2d764cc2b0065a326a42138ce43646676d7f36ee657f75",
+    "scripts/retest-plan.mjs": "7f5d584d0ba95d53bff66c935d880b3dedad3f580f6357cf6ad4bc8a490c4738",
+    "test/cli-input.test.mjs": "c14c8763660e87fdd07b920aa1f1e50d9e3c4b4a08ba83763a10b46212ca1520",
+    "test/fixtures/cli-stdin.mjs": "cec8b1d0a4a464de1cc5102253325fa5b070213bf6843872b5eb01adc6a31894",
+    "test/adapter-classification.test.mjs": "691a382e6779035dde121c16038564cf73d45f73a58182815b5453c4ca06b9a3",
+    "test/retest-plan.test.mjs": "6a67832869054c58d2a23ec00aa5bf534711823b55ff31555a782c865a3d33dd",
+    "README.md": "30f1a3cdb49dbc3eeae72a7870858545d800f0a85cf379d8aa810be0e7d145a7"
+  },
+  "evidence": {
+    "tests-final.tap": "1ce08eb4d37dbf3c868345da6c30685241e7a1c90def88b3ca40c0fb3fcf239d",
+    "transport.tap": "d2b934dabb17fcb1c99eada9e744d61df2a56eaf2d874fba005df3d780a848b4",
+    "plan-red.tap": "51e329fed8220e520fba582b21847467577670087c9e2d7dade14ed20cc0c426",
+    "plan-green.tap": "50dd2a18909c4f5e5104b83101eece3b768ef3f2198f829e25e353ed7f6eea4a",
+    "catalog.log": "60fbfe8fedc57f88372e4a1aa14643c43a5156578158fd69be77655dbb723fcc",
+    "syntax.log": "2582baded77dfb3f88ca54d2e1c669818463fb74ed9cec96f291413f8f97ba18",
+    "native-precision/summary.json": "8a3cf64b4edf19e42b5043b7a748eb907574db9d152345898777d70a22210507",
+    "native-precision/headless-summary.json": "926dd7a48b30575ce103de6cc817aa5cb3901c78d863e2b07e89aa7a273b32f2",
+    "native-precision/tty-summary.json": "bb23c0627a0e9b5e0a42d5eb2ee71644021a015981fc492fcecd1cb12ebce4a0"
+  },
+  "regressionEvidence": {
+    "eof-red.tap": "fa8d3bd2c101c4c0b5a7c4f47e23a51f335b1db362049b92e7bd3399ee29a0f4",
+    "eof-green.tap": "1eca9ff5e34e224de4491ae907d4b8bc9ddc2aa2ecfd91573d57e2364bf4a19c",
+    "classification-red.tap": "5c05fb9f50de9ae7e43f138304b1d3d87b2799e6d87aa38eb5efa9880a9e7167",
+    "classification-green.tap": "c3a12f881ab6abff52b6ce0b7bf255f93b0d9fb3c8fdb7af7715444a748eee82"
+  },
+  "privateEvidenceBundleSha256": "5bce2ce60088e92beec9c806dc623bf44af8a3fa0cb3aeb9773bba689a7eb780",
+  "retestProposal": {
+    "historicalCases": 717,
+    "selectedCases": 192,
+    "unresolvedCases": 175,
+    "conflictingCases": 15,
+    "controlCases": 5,
+    "plannedAttempts": 222,
+    "dispatchAllowed": false
+  },
+  "historicalCampaignUnchanged": true,
+  "cleanup": {
+    "verifiedAbsentForBothWorkers": true,
+    "remainingOwnedWorkers": []
+  },
+  "qualifications": [
+    "Synthetic adapter subprocess fixtures do not establish live billing behavior. Captured transport is required for HTTP status.",
+    "Native source installation required explicit --force and --accept-capabilities and reported provenance-invalid; this is not registry trust certification.",
+    "Public catalog/pricing metadata was fetched, but no paid inference ran. New model recipes are a proposal, not a completed runner or new compatibility results.",
+    "Earlier incomplete proof stages are retained privately; the final worker independently completed all final gates. Raw private evidence hashes identify retained files, not public attestation."
+  ]
+}

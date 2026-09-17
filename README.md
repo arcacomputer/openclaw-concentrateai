@@ -2,7 +2,7 @@
 
 An MIT-licensed provider plugin maintained by [Arca Computer](https://arca.computer). Connect OpenClaw to Concentrate's Responses API with streaming, tools, reasoning, structured output and image input, where the selected upstream model supports them.
 
-**Source candidate: 1.2.0. Last verified registry release: 1.1.0.** The tested catalog and guided-setup improvements are now on main; this update does not publish a new registry package. See [1.2.0 evidence and remaining release gates](docs/RELEASE-1.2.0.md). No npm release is claimed; `private: true` prevents accidental npm publication.
+**Version 1.2.1.** Source candidate, not yet released on ClawHub. The current registry release is **1.2.0**, verified on 2026-09-17. See the [1.2.1 verification report](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.2.1.md) for exact artifact identities and completed checks. No npm release is claimed; `private: true` prevents accidental npm publication.
 
 AI-assisted development, human stewardship by Luis Felipe Abarca. This is an independent integration, not an endorsement by Concentrate or the OpenClaw Foundation.
 
@@ -14,7 +14,7 @@ AI-assisted development, human stewardship by Luis Felipe Abarca. This is an ind
 - Native configuration writes that preserve unrelated settings, reject stale review plans and verify saved estimates.
 - A final **717-case test record** across 176 models, retaining failures and conflicting duplicate attempts rather than advertising an all-pass result.
 
-Read [what changed](CHANGELOG.md), [how we tested](docs/TESTING.md), and [results by model](docs/TEST-RESULTS.md).
+Read [what changed](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/CHANGELOG.md), [how we tested](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/TESTING.md), and [results by model](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/TEST-RESULTS.md).
 
 ## Install
 
@@ -22,7 +22,7 @@ The verified target is **OpenClaw 2026.9.4, Node 24.16.0, Linux**. Other host ve
 
 ### Registry distribution
 
-The last registry installation verified in this repository is **1.1.0**. The command below does not establish that the 1.2.0 setup commands are available; inspect the installed version.
+The command currently installs **1.2.0**, not the 1.2.1 source changes below. Check the installed version against the release report before using it in production; a source checkout and a published archive are different artifacts.
 
 ```sh
 openclaw plugins install clawhub:concentrate-provider --accept-capabilities
@@ -31,20 +31,20 @@ openclaw plugins list --json
 
 Review the code first: `--accept-capabilities` grants the plugin's declared capabilities. The registry command above does not require `--force`. Installation alone does not configure credentials or start inference. A clean registry scan and matching artifact hashes are not a signed build-provenance attestation; see the release report for the host's trust diagnostics.
 
-### Testing the 1.2.0 source candidate
+### Testing a source candidate
 
-Review a checkout, use disposable OpenClaw state, and follow [the source/package verification workflow](docs/TESTING.md). A local source installation uses:
+Review a checkout, use disposable OpenClaw state, and follow [the source/package verification workflow](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/TESTING.md). A local source installation uses:
 
 ```sh
 openclaw plugins install --force --accept-capabilities /absolute/path/to/reviewed/checkout
 openclaw plugins list --json
 ```
 
-The flags explicitly accept a reviewed local candidate. They are not advice to bypass warnings on unfamiliar code. Main contains the tested runtime implementation, but updated documentation changes newly packed artifact bytes; registry-release verification remains outstanding.
+The flags explicitly accept a reviewed local candidate. They are not advice to bypass warnings on unfamiliar code. The historical campaign below describes its pinned artifact, not every later source change. Only an exact-version release report establishes distribution verification.
 
 ### Existing installations
 
-This is a new package, not an automatic rename or update of `openclaw-concentrate`. The plugin ID is now `concentrate-provider`; the provider/model prefix remains `concentrate/`. **Do not enable both plugins.** Back up your configuration and follow the [migration instructions](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/MIGRATING.md) before replacing an existing installation. The old release remains available.
+This is a new package, not an automatic rename or update of `openclaw-concentrate`. The plugin ID is now `concentrate-provider`; the provider/model prefix remains `concentrate/`. Existing IDs such as `concentrate/gpt-4.1-mini` are unchanged, but identity preservation is not a new compatibility claim. **Do not enable both plugins.** Back up your configuration and follow the [migration instructions](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/MIGRATING.md) before replacing an existing installation. The old release remains available.
 
 ## Configure
 
@@ -52,7 +52,7 @@ Provide `CONCENTRATE_API_KEY` through OpenClaw's supported environment, secret o
 
 ### Guided setup
 
-These commands require the **1.2.0 source candidate**, not the last verified 1.1.0 registry release. Setup does not run inference.
+These commands require **1.2.0 or later**. The **1.2.1 source candidate** adds safe end-of-input cancellation; that fix is not in the current registry release. Setup does not run inference.
 
 ```sh
 openclaw concentrate models --filter claude
@@ -64,12 +64,14 @@ The wizard lets you filter/select models, inspect route pricing, review all four
 Headless preview and apply, without editing JSON:
 
 ```sh
-openclaw concentrate setup --model claude-haiku-4-5 --dry-run --json
+openclaw concentrate setup --model gpt-4.1 --cache-write 2 --dry-run --json
 # Review the rates and copy the returned plan.reviewToken:
-openclaw concentrate setup --model claude-haiku-4-5 --apply --acknowledge-estimates --review <review-token> --json
+openclaw concentrate setup --model gpt-4.1 --cache-write 2 --apply --acknowledge-estimates --review <review-token> --json
 ```
 
 Suggestions use the highest published **base** route/TTL rates, not tier ceilings or guaranteed bills. If a rate is missing, supply your estimate with `--input`, `--output`, `--cache-read` or `--cache-write`; use the same flags in preview and apply. Unknown rates never become zero automatically. An outdated review token or changed configuration is refused. Preview reads public metadata only. Nothing is saved on cancellation.
+
+Ctrl-C or end-of-input at a setup prompt cancels with exit code 130. Invalid selections remain errors with exit code 1; normal prompt cleanup must not turn a validation error into a cancellation.
 
 Existing explicit model allowlists gain only the selected missing entries; an unrestricted model catalog stays unrestricted. Existing manual `models.providers.concentrate.models` cost fields for selected models are updated consistently. Other manual model fields are preserved; custom endpoint overrides require review instead of being silently changed.
 
@@ -81,19 +83,19 @@ In `plugins.entries["concentrate-provider"].config`, acknowledge and provide you
 {
   "acknowledgeEstimatedCosts": true,
   "costOverrides": {
-    "gpt-4.1-mini": {
-      "input": 0.4,
-      "output": 1.6,
-      "cacheRead": 0.1,
-      "cacheWrite": 0.4
+    "gpt-4.1": {
+      "input": 2,
+      "output": 8,
+      "cacheRead": 0.5,
+      "cacheWrite": 2
     }
   }
 }
 ```
 
-All rates are **USD per million tokens**. This example uses the published base input/output/cache-read rates observed for GPT-4.1 Mini on 2026-09-13, plus **an explicit user estimate of 0.4 for cache write**, which was not published for that route. Review current pricing and replace these estimates for your workload. This is not a vendor quote or a spending limit. Set account/key limits in Concentrate separately.
+All rates are **USD per million tokens**. This example uses base input/output/cache-read rates observed for GPT-4.1 on 2026-09-16, plus **an explicit user estimate of 2 for cache write**, which was not published for these routes. Review current pricing and replace these estimates for your workload. This is not a vendor quote or a spending limit. Set account/key limits in Concentrate separately.
 
-After configuring credentials and estimates, select `concentrate/gpt-4.1-mini` with OpenClaw's model picker or `openclaw models set concentrate/gpt-4.1-mini`.
+After configuring credentials and estimates, select `concentrate/gpt-4.1` with OpenClaw's model picker or `openclaw models set concentrate/gpt-4.1`. For production, configure only models/features qualified in the current release report. The remaining catalog is available for explicit evaluation, not implicitly production-supported.
 
 Up to **256 exact, unprefixed Concentrate model IDs** can be configured. Every model needs all four finite, nonnegative rates: `input`, `output`, `cacheRead`, `cacheWrite`. Missing prices are never silently turned into zero. Explicit zero is accepted only as your acknowledged estimate. Configured model names display `[user cost estimate]`.
 
@@ -102,6 +104,8 @@ Only configured models become runnable. The dated fallback bundles metadata for 
 Browse the [complete model directory](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/MODELS.md) for current limits, advertised capabilities and preserved historical test outcomes. `openclaw concentrate models --refresh --json` labels live versus bundled data; it never rewrites the installed package.
 
 ## Supported behavior and limits
+
+Production qualification is deliberately narrower than the catalog: see the [support contract and operational checks](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/PRODUCTION-SUPPORT.md). It requires fresh installed-package results, repeated feature checks, and exact registry installation. Historical failures remain failures, including for models outside the qualified profile.
 
 - **Text and streaming:** native OpenClaw `openai-responses` transport, without a second custom inference client.
 - **Tools:** tool calls and results use the host's standard Responses representation. Parallel-tool and conversation-replay evidence is reported separately from single-tool checks.
@@ -113,6 +117,10 @@ Browse the [complete model directory](https://github.com/arcacomputer/openclaw-c
 
 ## How we tested it
 
+The separate **1.2.1 candidate qualification** recorded **27/27 passing embedded-runtime cases** on GPT-4.1 and Gemini 2.5 Flash: three repetitions of basic streaming response, real file-tool roundtrip, strict schema and controlled vision on each model, plus three Gemini reasoning-configuration checks. The [qualification record](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/PRODUCTION-QUALIFICATION-1.2.1.json) pins the installed artifact and raw-evidence hashes. Gateway checks, later repacks and registry release gates are reported separately in the [1.2.1 report](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.2.1.md). This is a narrow candidate profile, not all-model or registry-release certification.
+
+### Historical 1.2.0 campaign
+
 We installed the pinned 1.2.0 artifact into disposable OpenClaw 2026.9.4 hosts on Linux/Node 24.16.0. Credential-free synthetic preflight checked actual host requests before bounded live forwarding to Concentrate. Tests checked returned content, real tool-result payloads, schema/reasoning settings, image input, terminal process state and usage receipts, not just HTTP success.
 
 The campaign covered 176 basic-response, 176 tool-roundtrip, 137 schema, 125 reasoning and 103 vision cases. Serial execution transitioned to four isolated lanes, then twelve additional lanes with approved overlapping attempts, followed by nine one-case sandboxes for the remaining gaps. Each lane kept separate evidence/accounting; aggregation preserved duplicates and counted unique cases once.
@@ -121,7 +129,7 @@ The campaign covered 176 basic-response, 176 tool-roundtrip, 137 schema, 125 rea
 
 The 185-ID catalog includes the excluded `redact-v1` utility and eight quarantined Grok models outside this plan. Reasoning tests are bounded configuration/output checks, not reasoning-quality scores. Vision is a controlled two-color fixture, not general image understanding. Failures and conflicts still require review; neither catalog metadata nor one passing attempt proves universal compatibility.
 
-See [methodology and reproduction boundaries](docs/TESTING.md), [readable per-model results](docs/TEST-RESULTS.md), [final report](docs/TEST-CAMPAIGN-2026-09-16.md), and [every recorded attempt](docs/TEST-CAMPAIGN-2026-09-16.json). [Original smoke outcomes](docs/compatibility.json) remain unchanged as historical evidence.
+See [methodology and reproduction boundaries](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/TESTING.md), [readable per-model results](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/TEST-RESULTS.md), [final report](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/TEST-CAMPAIGN-2026-09-16.md), and [every recorded attempt](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/TEST-CAMPAIGN-2026-09-16.json). [Original smoke outcomes](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/compatibility.json) remain unchanged as historical evidence.
 
 ## Pricing evidence
 
@@ -134,6 +142,8 @@ node scripts/pricing.mjs gpt-4.1-mini /tmp/gpt-pricing.json
 This read-only helper uses a five-second timeout, one-MiB response limit, no redirects and no credentials. It preserves raw unit rates, tiers, cache TTLs, tool charges, support flags, source URL and timestamp. It does not collapse multiple routes into an invented universal price. Missing cache-write rates stay unknown.
 
 ## Development and verification
+
+For a targeted, **no-spend** follow-up plan, run `node scripts/retest-plan.mjs`. It selects unresolved/conflicting historical cases plus positive controls, preserves original bounds, and prints JSON without contacting a provider. It is not a live test launcher or spend authorization. Read the [precision review and next-test rules](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/PRECISION-REVIEW-2026-09-16.md) before starting another campaign.
 
 Run installation and OpenClaw verification in a bounded disposable host, not a production gateway:
 

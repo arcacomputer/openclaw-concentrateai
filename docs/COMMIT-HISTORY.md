@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-16T07:58:11+00:00**.
+Exported at **2026-09-17T04:45:25+00:00**.
 
-History through `001c2a00bc6b0fe02e703b7d47f61f4de83c0218`.
+History through `9be5801e5c1dce08344f52d91fdb5c822b60bba3`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -227,3 +227,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`001c2a00bc6b0fe02e703b7d47f61f4de83c0218`](https://github.com/arcacomputer/openclaw-concentrateai/commit/001c2a00bc6b0fe02e703b7d47f61f4de83c0218)
 - Author timestamp: `2026-09-16T07:58:03+00:00`
 - Committer timestamp: `2026-09-16T07:58:03+00:00`
+
+## docs: record merged implementation and campaign publication chronology
+
+- Commit: [`9be5801e5c1dce08344f52d91fdb5c822b60bba3`](https://github.com/arcacomputer/openclaw-concentrateai/commit/9be5801e5c1dce08344f52d91fdb5c822b60bba3)
+- Author timestamp: `2026-09-16T07:58:11+00:00`
+- Committer timestamp: `2026-09-16T07:58:11+00:00`

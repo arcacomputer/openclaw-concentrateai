@@ -5,7 +5,7 @@ Authoritative references:
 - https://docs.openclaw.ai/clawhub/cli
 - https://docs.openclaw.ai/clawhub/plugin-validation-fixes
 
-Current identity: `concentrate-provider`, source `arcacomputer/openclaw-concentrateai`. Read [the latest release report](RELEASE-1.1.0.md) and [migration guide](MIGRATING.md); the 1.0.1 evidence below is historical and belongs to `openclaw-concentrate`.
+Current identity: `concentrate-provider`, source `arcacomputer/openclaw-concentrateai`. Read [the current qualification/release report](RELEASE-1.2.1.md) and [migration guide](MIGRATING.md); the 1.0.1 evidence below is historical and belongs to `openclaw-concentrate`.
 
 This repository is a **code plugin**, not a skill. Use `clawhub package` commands, not `clawhub skill publish`. The MIT-0 skill publishing terms are not a reason to silently change this plugin's MIT license.
 
@@ -45,7 +45,7 @@ Trusted GitHub Actions publishing is optional follow-up, not automatic: initial 
 
 ## Current status
 
-**concentrate-provider 1.1.0 is published and verified**, including fresh installation, explicit migration and rollback. See [the current report](RELEASE-1.1.0.md) and [exact evidence](CLAWHUB-RELEASE-1.1.0.json).
+**concentrate-provider 1.2.0 is published**, with clean public scan state and artifact identity checked on 2026-09-16. The old statement that 1.1.0 was the latest release was a documentation error. See [1.2.0](RELEASE-1.2.0.md) and [the new 1.2.1 qualification](RELEASE-1.2.1.md). Fresh installation/migration/rollback evidence for 1.1.0 remains in [its historical report](RELEASE-1.1.0.md); it is not automatically evidence for a new patch.
 
 ## Historical 1.0.1 status
 

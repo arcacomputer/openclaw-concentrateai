@@ -41,7 +41,7 @@ writeFileSync(proof+'/host-synthetic.json',JSON.stringify({results,requests},nul
 assert.equal(row.requestCount,1,`${label}: exactly one HTTP request`);assert.equal(countAtReturn,1);assert.deepEqual(row.activeGroup,[]);
 if(label==='success')assert.equal(result.status,'passed');
 else if(label==='timeout'){assert.equal(result.termination,'deadline');assert.ok(result.groupSignals.includes('SIGTERM'));assert.ok(row.elapsedMs<timeoutMs+2000);}
-else{assert.notEqual(result.exitCode,0);assert.notEqual(result.exitCode,null);assert.equal(result.termination,null);if(label==='402')assert.equal(result.status,'payment-required');}
+else{assert.notEqual(result.exitCode,0);assert.notEqual(result.exitCode,null);assert.equal(result.termination,null);assert.equal(result.status,'unknown');assert.equal(requests[start].mode,label);}
 console.log(JSON.stringify(row));
 }
 // Force escalation: a wrapper exits on TERM, its child ignores TERM and would

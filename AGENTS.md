@@ -40,7 +40,7 @@ Check Git status and HEAD first. Preserve other agents' uncommitted changes. Use
 
 ## Current product boundary
 
-Current source is the `concentrate-provider` 1.2.0 candidate, including full fallback metadata and guided setup. The last verified distribution is 1.1.0, with publication, clean registry scans, fresh installation, migration and rollback evidence. Its distinct plugin ID does not change the `concentrate/` model namespace. See `docs/RELEASE-1.2.0.md` for source evidence and outstanding release gates, and `docs/RELEASE-1.1.0.md` for historical distribution proof. Do not enable the historical and new plugins together.
+Current source is the `concentrate-provider` 1.2.1 candidate, including safe setup EOF cancellation and precision-test improvements. Registry readback on 2026-09-17 confirms published 1.2.0 with clean scan state and the historical campaign artifact. The earlier claim that 1.1.0 was the latest distribution was incorrect. Its fresh installation, migration and rollback evidence remains historical, not proof of 1.2.1. See `docs/RELEASE-1.2.1.md` for current candidate checks and remaining registry gates. Do not enable the historical and new plugins together.
 
 The historical 1.0.x release has verified ClawHub publication, clean registry scans, fresh registry installation, native model registration and representative live tools/context, vision, reasoning and schema evidence. Version 1.0.1 is a documentation/metadata patch with unchanged provider code. This is not universal model or all-platform certification, nor a cryptographically attested release. Consult the latest release report and dated histories; preserve all historical error/inconclusive/quarantine states.
 

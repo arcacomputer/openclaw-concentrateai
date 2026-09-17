@@ -2,6 +2,10 @@
 
 The [final campaign report](TEST-CAMPAIGN-2026-09-16.md) accounts for 717 planned cases across 176 models. It is a bounded installed-plugin experiment, not a benchmark proving every model works. Start with the [readable per-model matrix](TEST-RESULTS.md); the [JSON](TEST-CAMPAIGN-2026-09-16.json) retains every recorded attempt.
 
+For the next campaign, use the [precision review](PRECISION-REVIEW-2026-09-16.md) and `node scripts/retest-plan.mjs`. The planner is offline and cannot dispatch requests. The historical assertions below describe what actually ran; they are not silently replaced by the revised feature recipes.
+
+The separate [1.2.1 qualification](PRODUCTION-QUALIFICATION-1.2.1.json) records 27 passing installed embedded-runtime cases across two models. Its [release report](RELEASE-1.2.1.md) separates gateway verification, current-source checks and registry-release gates. Do not combine those results with the historical totals below or describe a documentation-only repack as the exact earlier live-tested archive.
+
 ## What actually ran
 
 The tested artifact was `concentrate-provider@1.2.0`, built from source commit `0043409b4273a37e12e80f526a5b94e47df27906`. Workers ran Linux, Node 24.16.0 and OpenClaw 2026.9.4. The package was installed into disposable OpenClaw state. These were not direct API calls substituted for plugin tests.
@@ -93,4 +97,4 @@ For new live testing, obtain separate credentials and explicit scope, prepare sy
 
 The public dataset is allowlisted: case identifiers, feature bounds, outcomes, recorded timestamps and hashes of retained evidence. It excludes raw private prompts/responses, credentials, account data, private paths and financial ledgers. Private evidence hashes establish identity, not independently reproducible public attestation.
 
-The repository now contains the tested implementation. Eleven runtime/package files were compared byte-for-byte against both the tested source commit and retained installed tarball; see [the identity proof](source-reconciliation.json). Documentation was subsequently updated, so repacking produces a different artifact digest. This publication did not rerun the live campaign, certify a newly packed archive, or publish version 1.2.0 to a registry.
+At the `9be5801` reconciliation, eleven runtime/package files were compared byte-for-byte against the campaign's tested source and retained installed tarball; see [that historical identity proof](source-reconciliation.json). Subsequent code changes have separate [precision verification](precision-proof-2026-09-16.json) and do not inherit an exact-artifact all-model verdict. Repacking after code or documentation changes produces a different artifact digest. No new registry release is implied.

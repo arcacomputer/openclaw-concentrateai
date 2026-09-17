@@ -1,0 +1,2549 @@
+{
+  "schemaVersion": 1,
+  "dispatchAllowed": false,
+  "paidRequestsMade": 0,
+  "sourceDatasetSha256": "3e075287f06efe6824dc9d04a39e50e37814848ba9434dbee659273f556bee58",
+  "digestPolicy": "SHA-256 of JSON.stringify(parsed source dataset), not the original file bytes",
+  "historicalCases": 717,
+  "selectedCases": 192,
+  "unresolvedCases": 175,
+  "conflictingCases": 15,
+  "controlCases": 5,
+  "plannedAttempts": 222,
+  "limits": {
+    "automaticRetries": false,
+    "raiseOutputCapsAutomatically": false,
+    "newAuthorizationAndReservationsRequired": true
+  },
+  "observationAxes": [
+    "host-identity-and-exit",
+    "request-contract",
+    "transport-status",
+    "accounting-completeness",
+    "feature-meaning",
+    "output-format"
+  ],
+  "recipes": {
+    "basic-response": {
+      "requiresJson": false,
+      "criterion": "Plain-text sentinel; do not conflate response transport with JSON compliance"
+    },
+    "tool-roundtrip": {
+      "criterion": "Real nonce-bearing read, paired tool-result payload and returned file value"
+    },
+    "schema": {
+      "requiresJson": true,
+      "criterion": "Strict schema on wire and independent output validation"
+    },
+    "reasoning": {
+      "provesReasoningQuality": false,
+      "criterion": "Record effort transmission, reported reasoning usage and answer correctness separately"
+    },
+    "vision": {
+      "separateMeaningFromFormatting": true,
+      "criterion": "Known image bytes; independently record meaning/order and requested format"
+    }
+  },
+  "qualification": "Proposal only. New recipes or changed bounds are new experiments, not retroactive passes. Current availability, prices and cumulative reservations require independent review.",
+  "cases": [
+    {
+      "caseIndex": 1000,
+      "model": "claude-fable-5-1",
+      "feature": "basic-response",
+      "reasons": [
+        "positive-control"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1010,
+      "model": "claude-haiku-4-5",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1051,
+      "model": "gemma-3-12b",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1053,
+      "model": "gemma-3-27b",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1068,
+      "model": "deepseek-v3-0324",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1080,
+      "model": "qwen3-vl-30b-a3b",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1095,
+      "model": "qwen3.5-plus",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1097,
+      "model": "qwen3.5-397b-a17b",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1099,
+      "model": "qwen3-max",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1144,
+      "model": "muse-glimmer-30b",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1156,
+      "model": "llama-3.1-70b-instruct",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1159,
+      "model": "mistral-large-3",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1162,
+      "model": "magistral-small-1.2",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1165,
+      "model": "devstral-2",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1168,
+      "model": "ministral-3-3b",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1169,
+      "model": "ministral-3-8b",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1170,
+      "model": "ministral-3-14b",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1174,
+      "model": "jamba-1-5-mini",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1176,
+      "model": "command-a-vision",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1178,
+      "model": "nova-2-lite",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1179,
+      "model": "nova-premier",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1180,
+      "model": "nova-pro",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 1181,
+      "model": "nova-lite",
+      "feature": "basic-response",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2000,
+      "model": "claude-fable-5-1",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "positive-control"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2001,
+      "model": "claude-fable-5-1",
+      "feature": "schema",
+      "reasons": [
+        "positive-control"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2002,
+      "model": "claude-fable-5-1",
+      "feature": "reasoning",
+      "reasons": [
+        "positive-control"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2003,
+      "model": "claude-fable-5-1",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2007,
+      "model": "claude-fable-5",
+      "feature": "vision",
+      "reasons": [
+        "positive-control"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2019,
+      "model": "claude-opus-4-7",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2022,
+      "model": "claude-opus-4-6",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2026,
+      "model": "claude-opus-4-5",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2034,
+      "model": "claude-sonnet-4-6",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2038,
+      "model": "claude-sonnet-4-5",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2042,
+      "model": "claude-haiku-4-5",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2045,
+      "model": "claude-opus-4-1",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2047,
+      "model": "claude-sonnet-4",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2048,
+      "model": "claude-sonnet-4",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2072,
+      "model": "gpt-5.4-pro",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2073,
+      "model": "gpt-5.4-pro",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2085,
+      "model": "gpt-5.4-nano",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2098,
+      "model": "gpt-5",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2101,
+      "model": "gpt-5",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2102,
+      "model": "gpt-5-mini",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2105,
+      "model": "gpt-5-mini",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2106,
+      "model": "gpt-5-nano",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2107,
+      "model": "gpt-5-nano",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2109,
+      "model": "gpt-5-nano",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2110,
+      "model": "o1",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2113,
+      "model": "o1",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2114,
+      "model": "o3",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2121,
+      "model": "o4-mini",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2124,
+      "model": "o4-mini",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2128,
+      "model": "gpt-4.1-mini",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2130,
+      "model": "gpt-4.1-mini",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2131,
+      "model": "gpt-4o",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2134,
+      "model": "gpt-4o-mini",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2137,
+      "model": "gpt-oss-120b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2143,
+      "model": "gpt-oss-safeguard-120b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2145,
+      "model": "gpt-oss-safeguard-20b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2175,
+      "model": "gemini-3-flash-preview",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2176,
+      "model": "gemini-3-flash-preview",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2187,
+      "model": "gemini-2.5-flash-lite",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2191,
+      "model": "gemma-3-12b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2193,
+      "model": "gemma-3-12b",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2194,
+      "model": "gemma-3-4b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2196,
+      "model": "gemma-3-4b",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2197,
+      "model": "gemma-3-27b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2210,
+      "model": "deepseek-r1",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2211,
+      "model": "deepseek-r1",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2212,
+      "model": "deepseek-r1-0528",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2215,
+      "model": "deepseek-r1-distill-32b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2218,
+      "model": "deepseek-v3-0324",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2220,
+      "model": "deepseek-v3-1",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2223,
+      "model": "deepseek-v3-2",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2249,
+      "model": "qwen3-coder-480b-a35b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2251,
+      "model": "qwen3-vl-30b-a3b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2252,
+      "model": "qwen3-vl-30b-a3b",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2253,
+      "model": "qwen3-vl-30b-a3b",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2266,
+      "model": "qwen3-14b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2268,
+      "model": "qwen3-14b",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2269,
+      "model": "qwen3-30b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2275,
+      "model": "qwen3.8-max",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2280,
+      "model": "qwen3.7-max",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2282,
+      "model": "qwen3.7-plus",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2284,
+      "model": "qwen3.7-plus",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2285,
+      "model": "qwen3.7-flash",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2287,
+      "model": "qwen3.7-flash",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2288,
+      "model": "qwen3.6-plus",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2290,
+      "model": "qwen3.6-plus",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2291,
+      "model": "qwen3.6-flash",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2293,
+      "model": "qwen3.6-flash",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2294,
+      "model": "qwen3.6-35b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2295,
+      "model": "qwen3.6-35b",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2297,
+      "model": "qwen3.6-35b",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2299,
+      "model": "qwen3.5-122b-a10b",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2302,
+      "model": "qwen3.5-plus",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2303,
+      "model": "qwen3.5-plus",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2304,
+      "model": "qwen3.5-plus",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2305,
+      "model": "qwen3.5-flash",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2307,
+      "model": "qwen3.5-flash",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2308,
+      "model": "qwen3.5-397b-a17b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2309,
+      "model": "qwen3.5-397b-a17b",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2310,
+      "model": "qwen3.5-397b-a17b",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2311,
+      "model": "qwen3.5-397b-a17b",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2316,
+      "model": "qwen3-max",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2317,
+      "model": "qwen3-32b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2318,
+      "model": "qwen3-32b",
+      "feature": "schema",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2320,
+      "model": "qwen3-coder-plus",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2321,
+      "model": "qwen3-coder-flash",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2324,
+      "model": "qwen3-coder-30b-a3b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2328,
+      "model": "qwen3-vl-plus",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2330,
+      "model": "qwen3-vl-plus",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2331,
+      "model": "qwen3-vl-plus",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2332,
+      "model": "qwen3-vl-flash",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2335,
+      "model": "qwen3-vl-flash",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2339,
+      "model": "qwen-plus",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2341,
+      "model": "qwen-plus",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2342,
+      "model": "qwen-flash",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2345,
+      "model": "qwq-32b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2354,
+      "model": "kimi-k2-7-code",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2355,
+      "model": "kimi-k2-6",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2357,
+      "model": "kimi-k2-6",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2358,
+      "model": "kimi-k2-6",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt",
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2374,
+      "model": "minimax-m2-5-highspeed",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2375,
+      "model": "minimax-m2-5-highspeed",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2377,
+      "model": "minimax-m2-5",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2379,
+      "model": "minimax-m2-1-highspeed",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2381,
+      "model": "minimax-m2-1",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2384,
+      "model": "minimax-m2",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2388,
+      "model": "mimo-v2.5",
+      "feature": "vision",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2389,
+      "model": "mimo-v2.5-pro",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2412,
+      "model": "glm-5.3-flash",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2429,
+      "model": "glm-4.7",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2431,
+      "model": "glm-4.7-flash",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2440,
+      "model": "glm-4.5",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2442,
+      "model": "glm-4.5v",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2444,
+      "model": "glm-4.5v",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2445,
+      "model": "muse-glimmer-30b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2446,
+      "model": "muse-glimmer-30b",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2447,
+      "model": "muse-glimmer-30b",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2451,
+      "model": "muse-spark-1.3",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2452,
+      "model": "muse-spark-1.3-contributor",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2455,
+      "model": "muse-spark-1.3-contributor",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2456,
+      "model": "muse-spark-1.2",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2459,
+      "model": "muse-spark-1.2",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2460,
+      "model": "muse-spark-1.2-contributor",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2463,
+      "model": "muse-spark-1.2-contributor",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2464,
+      "model": "muse-spark-1.1",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2467,
+      "model": "muse-spark-1.1",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2468,
+      "model": "llama-4-maverick",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2470,
+      "model": "llama-4-maverick",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2471,
+      "model": "llama-4-scout",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2474,
+      "model": "llama-3-70b-instruct",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2475,
+      "model": "llama-3.3-70b-instruct",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt",
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2477,
+      "model": "llama-3.2-3b-instruct",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2479,
+      "model": "llama-3.2-1b-instruct",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2480,
+      "model": "llama-3.1-70b-instruct",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2481,
+      "model": "llama-3.1-70b-instruct",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2482,
+      "model": "llama-3-8b-instruct",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt",
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2483,
+      "model": "llama-3.1-8b-instruct",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2484,
+      "model": "mistral-large-3",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2493,
+      "model": "magistral-small-1.2",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2494,
+      "model": "magistral-small-1.2",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2495,
+      "model": "magistral-small-1.2",
+      "feature": "reasoning",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2496,
+      "model": "mistral-small-3.1",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2498,
+      "model": "mistral-small-3.2",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2501,
+      "model": "devstral-2",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2502,
+      "model": "devstral-2",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2503,
+      "model": "codestral",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2505,
+      "model": "mistral-nemo",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2507,
+      "model": "ministral-3-3b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2509,
+      "model": "ministral-3-3b",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2510,
+      "model": "ministral-3-8b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2512,
+      "model": "ministral-3-8b",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2513,
+      "model": "ministral-3-14b",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2515,
+      "model": "ministral-3-14b",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2516,
+      "model": "palmyra-x5",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2517,
+      "model": "palmyra-x4",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2518,
+      "model": "jamba-1-5-large",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2519,
+      "model": "jamba-1-5-mini",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2520,
+      "model": "command-a",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2522,
+      "model": "command-a-vision",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2523,
+      "model": "command-a-vision",
+      "feature": "schema",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2524,
+      "model": "command-a-vision",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2525,
+      "model": "ibm-granite-micro",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2530,
+      "model": "nova-premier",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2531,
+      "model": "nova-premier",
+      "feature": "reasoning",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 1024,
+        "expectedForwards": 1
+      }
+    },
+    {
+      "caseIndex": 2533,
+      "model": "nova-pro",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2534,
+      "model": "nova-pro",
+      "feature": "vision",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2535,
+      "model": "nova-lite",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2536,
+      "model": "nova-lite",
+      "feature": "vision",
+      "reasons": [
+        "conflicting-outcomes"
+      ],
+      "repetitions": 3,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    },
+    {
+      "caseIndex": 2537,
+      "model": "nova-micro",
+      "feature": "tool-roundtrip",
+      "reasons": [
+        "no-passing-attempt"
+      ],
+      "repetitions": 1,
+      "historicalBounds": {
+        "maxOutputTokens": 512,
+        "expectedForwards": 2
+      }
+    }
+  ]
+}

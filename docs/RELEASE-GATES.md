@@ -1,8 +1,8 @@
 # Release gates
 
-Current source: **concentrate-provider 1.2.0 candidate**. Last verified registry distribution: **1.1.0**, published on [ClawHub](https://clawhub.ai/plugins/concentrate-provider). See [1.2.0 source evidence and outstanding release gates](RELEASE-1.2.0.md), the [1.1.0 release report](RELEASE-1.1.0.md), [exact distribution evidence](CLAWHUB-RELEASE-1.1.0.json) and [migration/rollback guide](MIGRATING.md). The [1.0.1 gates](RELEASE-GATES-1.0.1.md) and original histories remain archived.
+Current source: **concentrate-provider 1.2.1 candidate**. The [1.2.1 release report](RELEASE-1.2.1.md) tracks each current gate and the [support contract](PRODUCTION-SUPPORT.md) defines the deliberately limited qualification profile. A direct registry read on 2026-09-16 corrected the earlier status: **1.2.0 is published**, with a clean scan and artifact matching the historical campaign. The [1.1.0 release report](RELEASE-1.1.0.md), [exact distribution evidence](CLAWHUB-RELEASE-1.1.0.json), [migration/rollback guide](MIGRATING.md) and [1.0.1 gates](RELEASE-GATES-1.0.1.md) remain historical evidence, not current patch qualification.
 
-The final [1.2.0 campaign](TEST-CAMPAIGN-2026-09-16.md) accounts for 717 planned cases across 176 models, with non-pass outcomes and conflicts preserved. It does not establish a new registry release. A fresh candidate pack, validation, authorized publication and registry-install readback remain required.
+The final [1.2.0 campaign](TEST-CAMPAIGN-2026-09-16.md) accounts for 717 planned cases across 176 models, with non-pass outcomes and conflicts preserved. It does not establish 1.2.1 compatibility. Fresh exact-package qualification, authorized publication and registry-install readback are required for the patch.
 
 ## Verified 1.1.0 release (historical distribution evidence)
 

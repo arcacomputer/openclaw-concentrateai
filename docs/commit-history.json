@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T07:58:11+00:00",
-  "historyThrough": "001c2a00bc6b0fe02e703b7d47f61f4de83c0218",
+  "generatedAt": "2026-09-17T04:45:25+00:00",
+  "historyThrough": "9be5801e5c1dce08344f52d91fdb5c822b60bba3",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "9be5801e5c1dce08344f52d91fdb5c822b60bba3",
+      "authorTime": "2026-09-16T07:58:11+00:00",
+      "committerTime": "2026-09-16T07:58:11+00:00",
+      "subject": "docs: record merged implementation and campaign publication chronology"
+    },
     {
       "sha": "001c2a00bc6b0fe02e703b7d47f61f4de83c0218",
       "authorTime": "2026-09-16T07:58:03+00:00",

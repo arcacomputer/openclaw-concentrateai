@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.1",
+  "scope": "Final source and native installed-package proof, not a registry release or a repeat of paid live qualification",
+  "completedAtUtc": "2026-09-17T04:48:31.589440+00:00",
+  "identity": {
+    "atUtc": "2026-09-17T04:46:10.690778+00:00",
+    "parent": "9be5801e5c1dce08344f52d91fdb5c822b60bba3",
+    "archiveSha256": "54db78ac574dcb5b0690dc5f2223145908db6012d8739dcc63732e907c15dd48",
+    "trackedPatchSha256": "bca16c5d87092fe99e928f631cfa5887254248f4e3fa2095dd8a8d4ad5564ed9",
+    "files": {
+      ".gitignore": "51085dc2177e92a0c74b09104051ff81fdf6c9b05ae3d3f5227460649f9b5a4e",
+      "AGENTS.md": "0191842226fed1b4a77bdca7973bb80a64ad94e4413a26c2dc2c58637dbfebd7",
+      "CHANGELOG.md": "8c0dc1696bda589c32c30a61c09f25bb059d20e09d1e01c191e4992fe8910cb5",
+      "LICENSE": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4",
+      "README.md": "8d43d7b8de53d3b84dae45cfad2821651ce336fc41ee29141f583701de3ce4ca",
+      "docs/CLAWHUB-PREFLIGHT.json": "95cc46211b7b2f54d1aa35a1769c28a34dd53be7f3d832dc6c6ac7762a4c4452",
+      "docs/CLAWHUB-PUBLISHING.md": "fc9f9d75908508f478264b719bb367d1d875b1d510a8ceda843ab9b284bf8899",
+      "docs/CLAWHUB-RELEASE-1.1.0.json": "4eab6ae3102db8bb6dd7032a9c069aa58d131c25266e800beec0c38e784e10c9",
+      "docs/CLAWHUB-RELEASE.json": "641734c9799cb3ab0b4fa5c8e3daf80f8190867b10fd3cde743c811da0cb3849",
+      "docs/COMMIT-HISTORY.md": "cddbbde797f0db9d0ccfe48b8596ce4d6bfbdcbe98d2d6dc313503abbf698881",
+      "docs/COMPATIBILITY.md": "45432ec1b01918f93256596faad7f33124381924cb530bd14acf302d0c35876a",
+      "docs/FEATURE-TESTING.md": "9900934628dd647feb72c9bd88583f24695597e71277909a9a3de2133ada4636",
+      "docs/GATEWAY-QUALIFICATION-1.2.1.json": "ef195c2ed6c88bccf3e007216d3c8ada5de6297af1aadc17fc3953420542d7db",
+      "docs/HISTORICAL-RELEASE-GATES.md": "618a0a11f577b0070701b0ed578b931516fa66351203e6972beb275c2810cf70",
+      "docs/MIGRATING.md": "a20bd9456e04a91bc0baa3571dc48fe06ec5960f242661c04395ea78aa99b0e2",
+      "docs/MODELS.md": "421b5ada149e85832a2069ecf8e5cf071d691adc587f88ef36f2f26b3a3d2df4",
+      "docs/PACKAGE-VERIFICATION.md": "ab70a29ead366f6853bd57b3e5d762dbb6d39c8b677f63ffb6e312abd411a291",
+      "docs/PRECISION-REVIEW-2026-09-16.md": "1a2e2a0a0e6e3c8259fa191378c4a54b919b6632774c9a942c511e2d9817f061",
+      "docs/PRODUCTION-QUALIFICATION-1.2.1.json": "2160fb49494d4ea22b2a8cf13a6e8415017c0a0801a1a111081f72deb31bc07b",
+      "docs/PRODUCTION-SUPPORT.md": "f3e301398abef9574176d557d2e8a8507a98a8d89d5d0df7f6891e9875dac998",
+      "docs/PROVENANCE.md": "2fbf49c6d323c6afa1277666a314c510dfe99b74cdd0966a5c8f794e81bba501",
+      "docs/RELEASE-1.0.0.md": "84d828c2b0a95b963dd34431158095a24a7e9888d2557b819872487787b50240",
+      "docs/RELEASE-1.1.0.md": "0b8242a0512f601ed287fdb556e64b4e6e8b946dc4c32372ec15a12d647297b9",
+      "docs/RELEASE-1.2.0.md": "eb33f07e86e13dabd0b4d3ab2a479d74125c41d7451b2809e1b2f3db135cd9fe",
+      "docs/RELEASE-1.2.1.md": "44dd36aac0da1201b4dba136e276afc4512a8d3e21aa9c76b4e0e9cff48457fb",
+      "docs/RELEASE-GATES-1.0.1.md": "5d8e010ce23063eba58fa5ffeaad259caf1c49ebc4349df23b530b5446ae6745",
+      "docs/RELEASE-GATES.md": "837d5294b144c6d3d4c2fdeaf7207b558dd019d0694de3fcb29234d2d2b47eab",
+      "docs/RETEST-PLAN-2026-09-16.json": "77ec8b82f85ea1257f3ebcb03b369f2c2709a038da52d6494d67f5165185baa2",
+      "docs/TEST-CAMPAIGN-2026-09-16.json": "66d089638ab7cf7e95f351f2261b3b8edc901a97338b832fd69308f8f1181583",
+      "docs/TEST-CAMPAIGN-2026-09-16.md": "76a8f4cec6ea4185ac5a3ff937b3455bf2f4e83bfcd556cfd322ef74bdd2c6de",
+      "docs/TEST-RESULTS.md": "73539e2054479b5c282c30fc421b0c973a26517a9532b6d74a7cd2398aacaea2",
+      "docs/TESTING.md": "926e14e4dfc303cc7042c01222bed007d191702c87ef0abeefb9b9c156a08e2f",
+      "docs/VISION-DIAGNOSTIC.json": "d126f96bc788d9fd8e2da660c7e4f96bac81a8681df5fcb45d60aff76f11a299",
+      "docs/catalog-improvement-proof.json": "f1bb6a4b50aa20e89ff751a8903c8de87059beb14182aac98a3f241ed4f8cb2d",
+      "docs/catalog.json": "3c034f9e4b11049594ed248afeafc68c2869ce1023a2469da708c3357007a0d5",
+      "docs/commit-history.json": "0c07f16148834c53bba5aa8358af3cc6affc92b13d6353dc2a1892d5fae9d9c1",
+      "docs/compatibility.json": "a329693e77bfd8dbabde56a3a4b23131a8d81de60714e7e4ebfa87d34e775052",
+      "docs/models.json": "69f924bc4ef4517acf5b9ed26f51f6fc94ea9d8b1c3cca1927f0a54e2ef81ddf",
+      "docs/plans/2026-09-13-catalog-setup.md": "8335db23d96123000bb2b10ba26a9c644d103851b0331379c31a1e61ffecc9d9",
+      "docs/precision-proof-2026-09-16.json": "cdde0efabc115602120f2165c93ba9ca89593d912489552e933a854a964e7e7d",
+      "docs/provenance.json": "5c87b8063a69cdc33411e82d8acc8e842110c9247f90cc1e1ba3b554516154ea",
+      "docs/release-1.0.0.json": "ec401290de804cc29b8feb36ceb1c31f74ea8a725869dac0287300a994d46684",
+      "docs/source-reconciliation.json": "17c0867188771398a682cd4d8320a5f11f2450a5bc0a1f5964f7773694e02ff2",
+      "evidence/2026-09-13/clawhub-1.0.1/metadata-red.log": "2f53cb2f01ed93e34037a77ab9ee06ffaa6c337ea1570af62504a111a3e96806",
+      "evidence/2026-09-13/clawhub-1.0.1/native-verify.log": "f09faff8f723edb457e5c75ff96b103bfdedf41c196488a847ef8e10fa0e075b",
+      "evidence/2026-09-13/clawhub-1.0.1/package-tests.tap": "dc62ec380131469294dac7c19ed0f4a2f1cadba5236cfbefc05696f4dcb47122",
+      "evidence/2026-09-13/clawhub-1.0.1/registry-install.log": "ba9c4c5acd86ab87b310666b7a695be10ab11e84dd1196352493fd8eaaa923ca",
+      "evidence/2026-09-13/clawhub-1.0.1/syntax.log": "ef5f650881cf702a6e5f632ef31d9990a9902b26ac5934a03d93ebf9d343f4f9",
+      "evidence/2026-09-13/clawhub-1.0.1/transport-tests.tap": "719da11ac93c9e9146b70611fc7ccf5d11a6b0dca698193019b8d3b1e5b0c14d",
+      "index.mjs": "8940344fe0a5e7dd61d9e361af4b6c41fad7c69fcd24a1fcd1006422d81bdcfb",
+      "openclaw.plugin.json": "b6e06608aaf13b2f603ac363dd57f25ee10eaff2c381ce4bcd5f67686dc2e785",
+      "package.json": "f30c27108ef0480a471a6372f9cc529cd26277652f07b085bf899350f9bc84f7",
+      "scripts/export-provenance.py": "5a591d9a217a7475f203be415e27fa68ff179d8b3f5ace14956cbc90955907e0",
+      "scripts/generate-manifest.mjs": "2da836be6bad4012c0ae9934e6cded325a0eea71f4a3e3f96d4ebd92b90999e0",
+      "scripts/host-registration-proof.mjs": "3491e0cb3a3738eb7e6d3afa00850cbce1855e1cd24546e41447c3d204566db8",
+      "scripts/host-synthetic-proof.mjs": "0f0433f48b56eb142446c0a6ad1800a25d76d8457ca2bd5ad98dc4b7da38e671",
+      "scripts/live-matrix.mjs": "3bc3fa732f6ce1128810ca7d49a5cbbfbbdf1037e01bbb6723809974b4a2ebae",
+      "scripts/openclaw-live-adapter.mjs": "780cf79759fadacf0c2d764cc2b0065a326a42138ce43646676d7f36ee657f75",
+      "scripts/pricing.mjs": "99e5dca8fdcb1fc5ffbf1844d2f551231f3f2ee8c47a2d91f7e9c050d4f26f20",
+      "scripts/remote-matrix-proof.mjs": "9bb213b9752f373f55deca58622b12ebb6bdbbc149043dcfca0bb675d7624f57",
+      "scripts/render-campaign-results.py": "d31775aab4477a400b08d8e26d56d96886d2e7dd80df766e253277c543555d1b",
+      "scripts/retest-plan.mjs": "7f5d584d0ba95d53bff66c935d880b3dedad3f580f6357cf6ad4bc8a490c4738",
+      "scripts/update-catalog.mjs": "738481808734d78f30bb87b9932d8991e8039c3c230384806039231929a16939",
+      "scripts/verification/README.md": "ce3e855f51db9ef2112e820170d4c5409db41c6f6eaedf6a0ed9b3ce733b6833",
+      "scripts/verification/catalog-acceptance.mjs": "af5f741ebb8d78ffc93a447cec79024dc28478367ae4b8ba0b76652ec66bb905",
+      "scripts/verification/clawhub-1.0.1-expected-files.json": "811a4a2f03a3a051869c1e2c1d22027f5cd97a8bbd51284a8c0336f182e7956e",
+      "scripts/verification/clawhub-registry-1.0.1.mjs": "aa15fd410095571039b22b4e3b499175a4b958d5c146f2d7b0399af495aa9538",
+      "scripts/verification/clawhub-registry-1.1.0.mjs": "fb00a3b8ad7e9da2699e266061766fcff64dc3300e300216c2d8ddf4a935fa2f",
+      "scripts/verification/credential-audit.mjs": "e6ad5ec2fc81e2538bbdfa6bfe6bbe651f09c6ab2a2d517189ca6324589f0a01",
+      "scripts/verification/feature-acceptance.mjs": "31c1fceba18f99ca554d4ff6be414c059c0762f7826548fac71f857237374f8f",
+      "scripts/verification/gateway-smoke.mjs": "c4e87b0c5f2a41fe5205135300ed356984121d529c3c5076bfa670c35295cd5d",
+      "scripts/verification/model-features-1.2.0.mjs": "d0313af79ed5d8e1f18751067ae69335a9637ad7f2bed236abcd8175bfcaff5b",
+      "scripts/verification/model-features-precision.mjs": "e86ad64bdb9af43227fd53f4e36abaaa34e1fa83e986929b1561a92d0b09d5de",
+      "scripts/verification/package-files.mjs": "a54dd80cd3adfc6a8f94ded2d01eef3ce5f02f59c172be50a2fb4aa976ed6e3c",
+      "scripts/verification/registry-1.1.0-files.json": "24b39e53074b2bcc1cbe594e144135c74e1b64aad304c3dd811fa6419074e15b",
+      "scripts/verification/release-host.mjs": "e0cae5af13b188b353d212334d6fc999e3cdd5c30d6be6e60d8ba36d487eb90f",
+      "scripts/verification/setup-1.2.0.mjs": "010fce84feed1a1eb748e748a5aa154be35ec5668bc706d26a793018a3a40981",
+      "scripts/verification/setup-pty-1.2.0.mjs": "edc2716b7b6d8440f5f2261fb737d0fb946cb461ef8e2cdc54fdf6006fef8a30",
+      "scripts/verification/setup-release.mjs": "c50534f51e5eda1b2db2c10b802ceea4fe66e88608ae1e850535075cc9cfd456",
+      "scripts/verification/vision-controls.mjs": "85a2c74423c0ef2d8651ad54a19130f29d2668c62e58fc5fae9464dba064bf85",
+      "scripts/verify-campaign-report.py": "0547ddbed476bd39f56dfbdbfdad2eda4db4e2055506c0a8ebf5d07b75f0f073",
+      "scripts/verify.mjs": "a6e7cdb2f2a1b6844af93d733c2ff05fa382db51b51895db48cb47ed4c684154",
+      "src/catalog-maintenance.mjs": "e988871c857bc4e2af371567dc7c081976e71158576e6b7e29ac56a079064614",
+      "src/catalog-meta.json": "6a76bb6706c33edd6a9e73dac7789f21e20d4a6b5899577168a4d90f3416f40d",
+      "src/catalog.mjs": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2",
+      "src/cli.mjs": "57904aadf9ba9537491a90d278c11bd17eb6a06ff549447fce36c54ccf2408aa",
+      "src/pricing.mjs": "4d5f0c4661ff80bb7c7106433c94b61cb18afa5045cc0180a4d1fe7df264f941",
+      "src/provider.mjs": "45e6df7798be79571f341175c55cdfc09d61d037cb07c5bb1e504d3bd828b927",
+      "src/seed.json": "bc9e1b2ba3ba8a20a857e49df5dfce9300093eb8d746df00ac8d633087e3d8a7",
+      "src/setup.mjs": "d4fdd5656c645ce3337a970497cfe288d4c045b9c5172cb9031063983d04d03d",
+      "test/adapter-classification.test.mjs": "691a382e6779035dde121c16038564cf73d45f73a58182815b5453c4ca06b9a3",
+      "test/catalog-acceptance.test.mjs": "1b22a53f913f3ea779d57211ee46ca78ff48ffec7d00945900a6decf9b558255",
+      "test/catalog-maintenance.test.mjs": "2e8b75d5114fc30e5cd65905590c14fd4d79c1b9ccc980c27d0b53a7299e68fd",
+      "test/catalog.test.mjs": "73273bcdafad1eff92ac19bd1de203901b917a6036f083de5e4459a192260430",
+      "test/cli-input.test.mjs": "c14c8763660e87fdd07b920aa1f1e50d9e3c4b4a08ba83763a10b46212ca1520",
+      "test/feature-acceptance.test.mjs": "36ad5cb2824cdec7fc5be66471e2d4c9b6865c264baac017e9391418f8596888",
+      "test/fixtures/catalog.json": "45e6191b666aa2c984ae50b4be83560310c131f25cc44dadcb7fcdb0e640addb",
+      "test/fixtures/cli-stdin.mjs": "cec8b1d0a4a464de1cc5102253325fa5b070213bf6843872b5eb01adc6a31894",
+      "test/fixtures/openclaw-package.json": "a234b616a049b4dedaad49ba0e95ff31afd3f19935e446199e75f78b589d1c21",
+      "test/fixtures/release/control-a.png": "6fa7ac2d2628aee9298c7d96cbf5b7cd74b5a23f6354727482eec3a173de85cc",
+      "test/fixtures/release/control-b.png": "d3b485780c86f9c0c1093e2d640cb3778409a688cf1f9d3c27ca4c84eb9a1dc5",
+      "test/fixtures/release/template.json": "9e21115e66c8d0049bb0dadc2269e045c453891c26d43805c0631405e4a21f94",
+      "test/fixtures/release/vision-cases.json": "a1b9205afc74bbf8dab5b19810146bd6b1ad148c5b19e3432e702481961716e4",
+      "test/full-catalog.test.mjs": "8cd3090021a63fb0057a5559d9a347d0bdd22acd57b4c8db53d57c6eeb3048f5",
+      "test/identity.test.mjs": "5ce9c9c3932db2729565f7f1ead678d36fd82af1a92e038108c49baf31b31947",
+      "test/matrix.test.mjs": "d80183cbb18350d375610de271388e9b4411a1ba5957108f9013c46c2bac417b",
+      "test/package.test.mjs": "23aba70f5888f440d03602cae7fb6496dca8a7b692114e0098b0dc60cf3b1af8",
+      "test/pricing.test.mjs": "f7e76c083048a4cfff5fe381f34a09335c2ebd2f57c01fee4ab0a38afd0e3053",
+      "test/provider.test.mjs": "888e7cb097bf4877cbe680a856ca80a531318bb386a5a583df5fa06b43daf9f1",
+      "test/recovery.test.mjs": "3623679c59610a4311be4253408f0c05b34ff763c2b48005f6a7e8b4eded3f56",
+      "test/release.test.mjs": "53d28e618d26759c21cc38f9f339a3adb652efac79935f35887a6102231d5e17",
+      "test/retest-plan.test.mjs": "6a67832869054c58d2a23ec00aa5bf534711823b55ff31555a782c865a3d33dd",
+      "test/runtime.test.mjs": "0420b758f1f12d19144e0108042ca378c7b9659c35253082caf4516c218b577b",
+      "test/setup-cli.test.mjs": "ad0bf7e6e8ffd6de590d14447ee7abf5d58bc099b72eedb46c976607f1304b91",
+      "test/setup-safety.test.mjs": "d86087542a10cf2ff5c829f8a0a10f021ee0886cc9ab4201abe5050919b1f78e",
+      "test/setup.test.mjs": "0b5cdd98189cce5565b4327b810fb2bada7bfa60005a7e9cfd661608e48aac45",
+      "test/transport.synthetic.mjs": "4ce9f38c37ba6c1a7b5a053e163ba571b2c2136c7a41b302950d720fb9b63496",
+      "test/verify.test.mjs": "9ea4b0dd5a16563aff4b34d9adeca366d2428ecae829e8261e4a53ea636858a7"
+    }
+  },
+  "execution": {
+    "provider": "Blaxel",
+    "image": "blaxel/codex:latest",
+    "region": "us-was-1",
+    "os": "Linux",
+    "node": "24.16.0",
+    "openclaw": "2026.9.4",
+    "npm": "11.13.0",
+    "memoryMiB": 8192,
+    "observedTotalMemoryBytes": 8345128960,
+    "observedCpuCount": 4,
+    "ttlSeconds": 600,
+    "maxConcurrentWorkers": 1,
+    "processTimeoutSeconds": 400,
+    "startedAt": "Thu, 17 Sep 2026 04:46:24 GMT",
+    "completedAt": "Thu, 17 Sep 2026 04:48:30 GMT",
+    "status": "completed",
+    "exitCode": 0,
+    "paidInferenceRequests": 0
+  },
+  "commands": [
+    "npm install --prefix /tmp/toolchain --no-audit --no-fund node@24.16.0",
+    "npm install --prefix /tmp/host --no-audit --no-fund openclaw@2026.9.4 clawhub@0.23.3",
+    "npm pack --json",
+    "node scripts/verification/package-files.mjs",
+    "clawhub package validate . --openclaw-version 2026.9.4 --json",
+    "node scripts/verification/setup-release.mjs native-release",
+    "npm run check",
+    "node --check on the new planner, feature acceptance, gateway, precision, setup and catalog-acceptance harnesses",
+    "node --test --test-reporter=tap --test-concurrency=1 test/*.test.mjs",
+    "npm run test:transport",
+    "node --test --test-concurrency=1 test/cli-input.test.mjs test/adapter-classification.test.mjs (ten sequential runs)",
+    "npm run catalog:verify",
+    "node scripts/retest-plan.mjs, followed by cmp against docs/RETEST-PLAN-2026-09-16.json",
+    "node scripts/host-synthetic-proof.mjs"
+  ],
+  "checks": {
+    "sourceTests": {
+      "tests": 67,
+      "passed": 67,
+      "failed": 0
+    },
+    "syntheticTransport": {
+      "tests": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "focusedStress": {
+      "runs": 10,
+      "testsPerRun": 5,
+      "passed": 50,
+      "failed": 0,
+      "overlapsSourceTests": true
+    },
+    "syntax": true,
+    "catalogSnapshot": true,
+    "offlinePlanMatchesGolden": true,
+    "nativeSetup": {
+      "passed": true,
+      "installedFilesMatched": 13,
+      "bundledModels": 184,
+      "liveModels": 186,
+      "liveReferenceSha256": "8145c6811824af446179f4586a820556bcec564cbb9b4b6cb175497d3b85c146",
+      "headless": true,
+      "ttyOutcomes": [
+        {
+          "label": "tty-decline",
+          "exitCode": 0,
+          "signal": 0,
+          "promptsAnswered": 7,
+          "expectedPrompts": 7,
+          "configUnchanged": true,
+          "fault": null
+        },
+        {
+          "label": "tty-save",
+          "exitCode": 0,
+          "signal": 0,
+          "promptsAnswered": 7,
+          "expectedPrompts": 7,
+          "configUnchanged": false,
+          "fault": null
+        },
+        {
+          "label": "tty-interrupt",
+          "exitCode": 130,
+          "signal": 0,
+          "promptsAnswered": 1,
+          "expectedPrompts": 1,
+          "configUnchanged": true,
+          "fault": null
+        },
+        {
+          "label": "tty-eof",
+          "exitCode": 130,
+          "signal": 0,
+          "promptsAnswered": 1,
+          "expectedPrompts": 1,
+          "configUnchanged": true,
+          "fault": null
+        }
+      ],
+      "trustReason": "provenance-invalid"
+    },
+    "actualHostSynthetic": {
+      "passed": true,
+      "cases": [
+        {
+          "label": "success",
+          "requests": 1,
+          "activeProcessGroup": []
+        },
+        {
+          "label": "402",
+          "requests": 1,
+          "activeProcessGroup": []
+        },
+        {
+          "label": "429",
+          "requests": 1,
+          "activeProcessGroup": []
+        },
+        {
+          "label": "500",
+          "requests": 1,
+          "activeProcessGroup": []
+        },
+        {
+          "label": "timeout",
+          "requests": 1,
+          "activeProcessGroup": []
+        },
+        {
+          "label": "term-resistant-descendant",
+          "requests": 1,
+          "activeProcessGroup": []
+        }
+      ]
+    },
+    "packageValidation": {
+      "breakageCount": 0,
+      "warningCount": 0,
+      "deprecationWarningCount": 0,
+      "issueCount": 0
+    }
+  },
+  "artifact": {
+    "sha256": "d92dc7d5002d29dea2efa7f11811b4b2a15cf2e5dbc79320ba6a0792045d6d44",
+    "files": {
+      "LICENSE": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4",
+      "src/catalog-meta.json": "6a76bb6706c33edd6a9e73dac7789f21e20d4a6b5899577168a4d90f3416f40d",
+      "openclaw.plugin.json": "b6e06608aaf13b2f603ac363dd57f25ee10eaff2c381ce4bcd5f67686dc2e785",
+      "package.json": "f30c27108ef0480a471a6372f9cc529cd26277652f07b085bf899350f9bc84f7",
+      "src/seed.json": "bc9e1b2ba3ba8a20a857e49df5dfce9300093eb8d746df00ac8d633087e3d8a7",
+      "README.md": "8d43d7b8de53d3b84dae45cfad2821651ce336fc41ee29141f583701de3ce4ca",
+      "src/catalog-maintenance.mjs": "e988871c857bc4e2af371567dc7c081976e71158576e6b7e29ac56a079064614",
+      "src/catalog.mjs": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2",
+      "src/cli.mjs": "57904aadf9ba9537491a90d278c11bd17eb6a06ff549447fce36c54ccf2408aa",
+      "index.mjs": "8940344fe0a5e7dd61d9e361af4b6c41fad7c69fcd24a1fcd1006422d81bdcfb",
+      "src/pricing.mjs": "4d5f0c4661ff80bb7c7106433c94b61cb18afa5045cc0180a4d1fe7df264f941",
+      "src/provider.mjs": "45e6df7798be79571f341175c55cdfc09d61d037cb07c5bb1e504d3bd828b927",
+      "src/setup.mjs": "d4fdd5656c645ce3337a970497cfe288d4c045b9c5172cb9031063983d04d03d"
+    },
+    "liveTestedArtifactSha256": "88fc47de47eccf0f37d839484e607e62d7d0e1d7568eb3515f8d473f8e7ac4df",
+    "differencesFromLiveTestedArtifact": [
+      "README.md"
+    ],
+    "runtimeAndPackageMetadataUnchanged": true
+  },
+  "retainedLiveEvidenceRecheck": {
+    "embeddedCases": 27,
+    "embeddedForwards": 39,
+    "embeddedRawHashes": 453,
+    "gatewayCases": 2,
+    "gatewayForwards": 2,
+    "gatewayRawHashes": 38
+  },
+  "historicalFilesUnchanged": {
+    "docs/TEST-CAMPAIGN-2026-09-16.json": "66d089638ab7cf7e95f351f2261b3b8edc901a97338b832fd69308f8f1181583",
+    "docs/compatibility.json": "a329693e77bfd8dbabde56a3a4b23131a8d81de60714e7e4ebfa87d34e775052",
+    "docs/TEST-RESULTS.md": "73539e2054479b5c282c30fc421b0c973a26517a9532b6d74a7cd2398aacaea2"
+  },
+  "evidenceSha256": {
+    "host-synthetic.json": "9ac32f2b238d7ef0c2431e23cfd171c3fc5ee2431c931ce8a3a4494805ad7f0b",
+    "retest-plan.json": "77ec8b82f85ea1257f3ebcb03b369f2c2709a038da52d6494d67f5165185baa2",
+    "catalog-verify.log": "b310f1607882dc610881785d42ab8017aaa5cdb252dd6a9278f59bf38ff79d9d",
+    "stress-10.tap": "a76cadc4ce676535caf887aa73987e94d4a22930aedc5b1388fca50ca93eae80",
+    "stress-9.tap": "0fc9b3ea36f4376fb0165cd4da301863e409439f7c9b566146b6f388a7dacd1b",
+    "stress-8.tap": "c7bfb06fd561e733ee084e72e60d8315b1f7e57b209a98629996a22f8b5cca65",
+    "stress-7.tap": "5383dae3bcf2f21a0bfd3bf853afd29d861a708115256fc458fc3b3047c49db3",
+    "stress-6.tap": "b2359ca16a50a52044f68255f946fa17ee875483732f48e448586d75441959b6",
+    "stress-5.tap": "54abfb0f19197c60a0a54388f8ab7d490a4bb9ea6b9c252936af72e186e5c9fc",
+    "stress-4.tap": "ef387946c19774710e373b9d3204e686ea31b1331cfc8e4a134b559be0d37d51",
+    "stress-3.tap": "57635903f62710b2a80d826340bec28e5677d7d37e7a615a16340501b3cff291",
+    "stress-2.tap": "0e5e2760933623cb006bd1e85e22b87362802ca4d952e0c7fc06311fcc923f91",
+    "stress-1.tap": "3012e17116db52d52b8934dedb8b8ed9791cd5f2c11ad284a199d6f12b794a8c",
+    "transport.log": "6f07a05e0e17b1031f4f5db4f0095011917c6171f03e7982b2e5e9c21318734e",
+    "source-tests.tap": "3cf7fb4ddaf38506dea29c679182418dcd5c5c3e2d0f4ae431540b90a1b4d427",
+    "check.log": "c4e8ec9022b532cb7867f463943e4e1ba0135146ea80dad4c4d2bb68c09ad6f4",
+    "native-release/summary.json": "305a12cf5e637b3154bea8c6ea8fe66256a786e3fcac0b41124136c609628542",
+    "native-release/tty-summary.json": "bb23c0627a0e9b5e0a42d5eb2ee71644021a015981fc492fcecd1cb12ebce4a0",
+    "native-release/headless-summary.json": "8458441ad06f8db46b6e7b181b14d5fa887c5f5ff1211cdd01b2b42c08cb45f7",
+    "validation.json": "60b8dcbca5b44f3322dc9f73e50d9d685c15abc5fc84dbb1bd9dfde811ad5fae",
+    "expected-files.json": "e572a0701a8d7ed945c9cdc2e025efe7992fe7be82dc132358d9f5095bdf5e1f"
+  },
+  "privateEvidenceBundleSha256": "05f8c21df1aff6753684d38124ac71604905d1d32ce5f37dc4b4e497320eff45",
+  "cleanup": {
+    "providerAbsenceVerified": true,
+    "unrelatedInventoryUnchanged": true,
+    "elapsedSeconds": 147.58714747428894
+  },
+  "postProofDocumentation": {
+    "changed": [
+      "docs/RELEASE-1.2.1.md"
+    ],
+    "added": [
+      "docs/SOURCE-VERIFICATION-1.2.1.json"
+    ],
+    "boundary": "These report-only updates are outside the checked archive and excluded from the installed package. No runtime, test, harness or packed file changed after proof."
+  },
+  "qualifications": [
+    "The dirty candidate is bound by all source file hashes and archive digest, not by its parent SHA alone.",
+    "Native local archive installation used explicit acceptance flags and reported provenance-invalid; this is not signed registry trust.",
+    "Retained paid results used the prior archive; only README differs in the current package. No paid request was rerun for final source verification.",
+    "Private evidence hashes are identities, not public third-party attestations. Compute and API reservations are not reconciled invoice charges.",
+    "No ClawHub or npm publication was performed."
+  ]
+}

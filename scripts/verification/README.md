@@ -1,6 +1,18 @@
 # Reproduce release proof
 
-## Current 1.1.0 registry identity proof
+## 1.2.1 candidate verification
+
+The [1.2.1 report](../../docs/RELEASE-1.2.1.md) separates source checks, the repeated embedded-runtime profile, the text-only gateway smoke and outstanding registry-release gates. These harnesses are excluded from the installed package and are not a one-command permission to spend.
+
+- `setup-release.mjs` installs `/tmp/candidate/concentrate-provider-1.2.1.tgz`, checks the 13 files against `/tmp/proof/expected-files.json`, and exercises headless and real-terminal setup. It rejects real provider/publisher/infrastructure credentials.
+- `model-features-precision.mjs` uses the fixed layout below, the exact installed candidate path in `/tmp/template.json`, and the `BATCH_ROW` preflight/live contract. It adds `feature-acceptance.mjs` to separate plain text, actual tool values, strict JSON, image meaning/format and reasoning-configuration observations.
+- `gateway-smoke.mjs` uses that same contract but accepts only `basic-response`. It starts a bounded loopback gateway, requires the gateway RPC result rather than a local fallback, captures both child credential-isolation records and shuts the gateway process group down. It is not an all-feature gateway test.
+
+Prepare the template from `test/fixtures/release/template.json`, replacing `plugins.load.paths` with the freshly installed package directory; verify every installed file before dispatch. Stage `test/fixtures/release/control-a.png` as `/tmp/image.png` and verify its hash against the selected proof metadata. Copy the chosen harness to `/tmp/batch.mjs` and `credential-audit.mjs` to `/tmp/credential-audit.mjs`. Current pricing, exact package/harness hashes, aggregate reservations and per-case forward limits must be validated by the owning controller before injecting a key. The public harness is only the bounded execution component, not that private credential/budget controller.
+
+For the 1.2.1 profile, basic/tool/schema/vision cases used 512 output tokens; Gemini reasoning used 1024. The [dated qualification record](../../docs/PRODUCTION-QUALIFICATION-1.2.1.json) and [gateway record](../../docs/GATEWAY-QUALIFICATION-1.2.1.json) are authoritative for executed cases. Preserve their historical bytes; later retests get new records.
+
+## Historical 1.1.0 registry identity proof
 
 `clawhub-registry-1.1.0.mjs` is the exact executed, credential-free host proof for the new `concentrate-provider` package. It verifies fresh registry installation, each installed file hash, native registration, configuration/model selection, migration with the old plugin disabled, saved-cost and synthetic memory preservation, and rollback. All commands and results are in `docs/CLAWHUB-RELEASE-1.1.0.json`.
 

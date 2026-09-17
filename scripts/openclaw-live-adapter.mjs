@@ -75,8 +75,10 @@ export function openClawAdapter({binary, configPath, stateDir, env={}, transport
       // the surrounding approved worker if needed; review before publication.
       const streams=`${result.stdout??''}\n${result.stderr??''}`;
       const evidence={exitCode:result.status,signal:result.signal,termination:result.error??null,pid:result.pid,groupSignals:result.signals,outputSha256:createHash('sha256').update(streams).digest('hex')};
-      if(/\b402\b|payment.required|insufficient.credit/i.test(streams))return {...evidence,status:'payment-required',httpStatus:402};
-      if(result.error || result.signal)return {...evidence,status:'unknown'};
+      // Token counts, model text and stderr prose are not HTTP evidence.
+      // Unknown host failures still stop the matrix; only the transport owner
+      // can supply an authoritative payment-required status.
+      if(result.error || result.signal || result.status!==0)return {...evidence,status:'unknown',reason:'Host execution failed; upstream HTTP/billing status requires captured transport evidence'};
       let body; try {body=JSON.parse(result.stdout);} catch {return {...evidence,status:'unknown',reason:'Host output is not whole-stream JSON'};}
       const meta=body.meta?.agentMeta;
       if(meta?.provider!=='concentrate' || meta?.model!==model)return {...evidence,status:'unknown',reason:'Exact provider route not proven by host result'};
