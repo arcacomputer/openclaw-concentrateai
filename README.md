@@ -2,7 +2,7 @@
 
 An MIT-licensed provider plugin maintained by [Arca Computer](https://arca.computer). Connect OpenClaw to Concentrate's Responses API with streaming, tools, reasoning, structured output and image input, where the selected upstream model supports them.
 
-**Version 1.2.1.** Source candidate, not yet released on ClawHub. The current registry release is **1.2.0**, verified on 2026-09-17. See the [1.2.1 verification report](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.2.1.md) for exact artifact identities and completed checks. No npm release is claimed; `private: true` prevents accidental npm publication.
+**Version 1.2.1 is published on ClawHub**, with a clean registry scan and verified fresh installation, legacy migration and rollback. Public registry status was rechecked on 2026-09-18. See the [1.2.1 verification report](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.2.1.md) for exact artifact identities and completed checks. No npm release is claimed; `private: true` prevents accidental npm publication.
 
 AI-assisted development, human stewardship by Luis Felipe Abarca. This is an independent integration, not an endorsement by Concentrate or the OpenClaw Foundation.
 
@@ -22,7 +22,7 @@ The verified target is **OpenClaw 2026.9.4, Node 24.16.0, Linux**. Other host ve
 
 ### Registry distribution
 
-The command currently installs **1.2.0**, not the 1.2.1 source changes below. Check the installed version against the release report before using it in production; a source checkout and a published archive are different artifacts.
+The command installs the published **1.2.1** release. Check the installed version against the release report before using it in production; a source checkout and a published archive are different artifacts.
 
 ```sh
 openclaw plugins install clawhub:concentrate-provider --accept-capabilities
@@ -52,7 +52,7 @@ Provide `CONCENTRATE_API_KEY` through OpenClaw's supported environment, secret o
 
 ### Guided setup
 
-These commands require **1.2.0 or later**. The **1.2.1 source candidate** adds safe end-of-input cancellation; that fix is not in the current registry release. Setup does not run inference.
+These commands require **1.2.0 or later**. The **1.2.1 release** adds safe end-of-input cancellation. Setup does not run inference.
 
 ```sh
 openclaw concentrate models --filter claude

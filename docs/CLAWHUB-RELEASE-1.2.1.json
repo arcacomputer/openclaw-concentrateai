@@ -1,0 +1,154 @@
+{
+  "registry": {
+    "package": {
+      "_id": "rn767ez4yxmt27aq6f5s962y618eaxtt",
+      "artifact": {
+        "format": "tgz",
+        "kind": "npm-pack",
+        "npmFileCount": 13,
+        "npmIntegrity": "sha512-BOrg7LuoD9AZ7TRf9D/NpaEkNPuXdXdGq2KwjEjxwhPuDIrsox3P9Ju2trHGSFkoX4aK72oYMW2yqcB3xVdSBw==",
+        "npmShasum": "50fcee51216dcd06e968bfcbefcbf0444afe972f",
+        "npmTarballName": "concentrate-provider-1.2.1.tgz",
+        "npmUnpackedSize": 336676,
+        "sha256": "d92dc7d5002d29dea2efa7f11811b4b2a15cf2e5dbc79320ba6a0792045d6d44",
+        "size": 27124
+      },
+      "categories": [
+        "models"
+      ],
+      "channel": "community",
+      "compatibility": {
+        "builtWithOpenClawVersion": "2026.9.4",
+        "minGatewayVersion": "2026.9.4",
+        "pluginApiRange": ">=2026.9.4"
+      },
+      "createdAt": 1789320154926,
+      "displayName": "Concentrate AI Provider",
+      "family": "code-plugin",
+      "icon": null,
+      "isOfficial": false,
+      "latestReleaseId": "rd7031byx4dhq70ybztfee2sqs8ekg5r",
+      "latestVersion": "1.2.1",
+      "name": "concentrate-provider",
+      "runtimeId": "concentrate-provider",
+      "scanStatus": "clean",
+      "stats": {
+        "downloads": 10,
+        "installs": 0,
+        "stars": 0,
+        "versions": 3
+      },
+      "summary": "Concentrate.ai provider for OpenClaw: Responses, tools, reasoning, structured output and image input.",
+      "tags": {
+        "latest": "1.2.1"
+      },
+      "updatedAt": 1789625539714,
+      "verification": {
+        "hasProvenance": false,
+        "scanStatus": "clean",
+        "scope": "artifact-only",
+        "sourceCommit": "d9b9aae1f9dce23b2c64a2b84780fc6758d25b03",
+        "sourceRepo": "arcacomputer/openclaw-concentrateai",
+        "sourceTag": "d9b9aae1f9dce23b2c64a2b84780fc6758d25b03",
+        "summary": "Validated package structure and linked the release to source metadata.",
+        "tier": "source-linked"
+      }
+    },
+    "owner": {
+      "handle": "felirami",
+      "displayName": "felirami",
+      "image": "https://avatars.githubusercontent.com/u/6752178?v=4",
+      "official": false
+    }
+  },
+  "installationEvidenceUtc": "2026-09-17T06:14:14.576Z",
+  "runtime": {
+    "node": "v24.16.0",
+    "openclaw": "2026.9.4",
+    "os": "Linux"
+  },
+  "freshInstallPassed": true,
+  "fileMatches": [
+    {
+      "path": "LICENSE",
+      "sha256": "05ca181f9fd0889ece52d90acd217649c455a82fe9ad1dcbf781b7b68abb12e4",
+      "matched": true
+    },
+    {
+      "path": "src/catalog-meta.json",
+      "sha256": "6a76bb6706c33edd6a9e73dac7789f21e20d4a6b5899577168a4d90f3416f40d",
+      "matched": true
+    },
+    {
+      "path": "openclaw.plugin.json",
+      "sha256": "b6e06608aaf13b2f603ac363dd57f25ee10eaff2c381ce4bcd5f67686dc2e785",
+      "matched": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "f30c27108ef0480a471a6372f9cc529cd26277652f07b085bf899350f9bc84f7",
+      "matched": true
+    },
+    {
+      "path": "src/seed.json",
+      "sha256": "bc9e1b2ba3ba8a20a857e49df5dfce9300093eb8d746df00ac8d633087e3d8a7",
+      "matched": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "8d43d7b8de53d3b84dae45cfad2821651ce336fc41ee29141f583701de3ce4ca",
+      "matched": true
+    },
+    {
+      "path": "src/catalog-maintenance.mjs",
+      "sha256": "e988871c857bc4e2af371567dc7c081976e71158576e6b7e29ac56a079064614",
+      "matched": true
+    },
+    {
+      "path": "src/catalog.mjs",
+      "sha256": "75b3139cd3ea76654ae2a112e8bb2d61cec219211c427a7d4a844f2aec040ea2",
+      "matched": true
+    },
+    {
+      "path": "src/cli.mjs",
+      "sha256": "57904aadf9ba9537491a90d278c11bd17eb6a06ff549447fce36c54ccf2408aa",
+      "matched": true
+    },
+    {
+      "path": "index.mjs",
+      "sha256": "8940344fe0a5e7dd61d9e361af4b6c41fad7c69fcd24a1fcd1006422d81bdcfb",
+      "matched": true
+    },
+    {
+      "path": "src/pricing.mjs",
+      "sha256": "4d5f0c4661ff80bb7c7106433c94b61cb18afa5045cc0180a4d1fe7df264f941",
+      "matched": true
+    },
+    {
+      "path": "src/provider.mjs",
+      "sha256": "45e6df7798be79571f341175c55cdfc09d61d037cb07c5bb1e504d3bd828b927",
+      "matched": true
+    },
+    {
+      "path": "src/setup.mjs",
+      "sha256": "d4fdd5656c645ce3337a970497cfe288d4c045b9c5172cb9031063983d04d03d",
+      "matched": true
+    }
+  ],
+  "migration": {
+    "passed": true,
+    "costsPreserved": true,
+    "oldDisabled": true,
+    "memorySentinelPreserved": true
+  },
+  "rollback": {
+    "passed": true,
+    "oldVersion": "1.0.1",
+    "costsPreserved": true,
+    "memorySentinelPreserved": true
+  },
+  "trustReason": "provenance-invalid",
+  "paidInferenceRequests": 0,
+  "cleanupVerified": true,
+  "note": "Historical installed-registry proof recovered and reconciled with live public registry. No new runtime test claimed. Rollback targets historical 1.0.1, not a 1.2.0 in-place downgrade."
+}

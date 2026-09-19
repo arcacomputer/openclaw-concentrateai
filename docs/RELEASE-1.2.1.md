@@ -1,6 +1,6 @@
 # Version 1.2.1 release qualification
 
-Status: source candidate for GitHub publication. Embedded-runtime qualification and gateway text smoke passed. **Not published to ClawHub or npm.** Registry-install and distribution qualification remain separate release gates.
+Status: **published on ClawHub as concentrate-provider@1.2.1**. Registry publication and fresh installation, legacy migration and rollback were completed on 2026-09-17. Public registry identity and clean scan were rechecked on 2026-09-18. No npm publication. The documentation handoff previously failed to reflect the completed registry work; the historical qualification below is preserved. See [distribution evidence](CLAWHUB-RELEASE-1.2.1.json).
 
 This patch fixes safe end-of-input cancellation in setup and corrects test-harness billing classification. New acceptance checks separate plain responses from JSON, controlled image content from formatting, and reasoning configuration from quality. See the [support contract](PRODUCTION-SUPPORT.md).
 
@@ -37,12 +37,14 @@ The corrected final run completed on 2026-09-17 at 04:48:30 UTC, with terminal e
 
 The final package SHA-256 is `d92dc7d5002d29dea2efa7f11811b4b2a15cf2e5dbc79320ba6a0792045d6d44`. Every packed file was compared against the retained live-tested artifact: **only README.md differs**. The source archive SHA-256 is `54db78ac574dcb5b0690dc5f2223145908db6012d8739dcc63732e907c15dd48`. The [final source-verification record](SOURCE-VERIFICATION-1.2.1.json) binds every checked source file, commands/results, package bytes and retained evidence. It also records a fresh hash recheck of 453 embedded-runtime and 38 gateway evidence files. Local archive installation reported `provenance-invalid` under explicit source-acceptance flags; it is not registry trust certification.
 
-After the remote proof, only this release report was updated and the source-verification JSON was added. Both are outside the installed package; no runtime, test, harness or packed file changed. GitHub's CodeQL check is separate from the full suite executed on Blaxel. Registry qualification remains outstanding.
+After the remote proof, only this release report was updated and the source-verification JSON was added. Both are outside the installed package; no runtime, test, harness or packed file changed. GitHub's CodeQL check is separate from the full suite executed on Blaxel. Registry qualification was completed afterward, as recorded below.
 
-## Remaining distribution gates
+## Distribution gates: completed, reconciled 2026-09-18
 
-- Explicit ClawHub release authorization and a current publication dry run.
-- Publish a new immutable 1.2.1 archive, verify publisher identity, terminal scan state and public artifact digest.
-- Fresh unauthenticated native registry installation, migration and rollback evidence for that exact distribution.
+- Published immutable 1.2.1, owner `felirami`, source `d9b9aae1f9dce23b2c64a2b84780fc6758d25b03`; ClawScan and TruffleHog clean.
+- Public artifact SHA-256 matches the final tested package above.
+- Fresh unauthenticated registry installation loaded the plugin and all 13 installed files matched.
+- Legacy migration preserved cost configuration and a memory sentinel, with the old plugin disabled. Rollback to historical 1.0.1 passed; this is not a 1.2.0 in-place downgrade test.
+- No paid inference occurred in registry proof; worker cleanup was verified.
 
-GitHub source publication does not satisfy those registry gates. The current public registry remains 1.2.0, with clean scan state and the historical artifact hash reverified on 2026-09-17. No new npm or ClawHub release is claimed.
+The host still reports `provenance-invalid`: this is source-linked community distribution without cryptographic build attestation, not an officially endorsed or provenance-attested plugin. Historical all-model failures remain unresolved; use the narrow qualified support profile. The immutable registry archive retains its pre-publication README; the corrected GitHub README does not change those released bytes.

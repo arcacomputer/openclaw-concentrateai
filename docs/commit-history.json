@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T04:45:25+00:00",
-  "historyThrough": "9be5801e5c1dce08344f52d91fdb5c822b60bba3",
+  "generatedAt": "2026-09-19T01:10:09+00:00",
+  "historyThrough": "d9b9aae1f9dce23b2c64a2b84780fc6758d25b03",
   "scope": "Existing commits through historyThrough. The later commit storing this export is not included; inspect Git history for its SHA and timestamps.",
   "commits": [
+    {
+      "sha": "d9b9aae1f9dce23b2c64a2b84780fc6758d25b03",
+      "authorTime": "2026-09-17T04:52:45+00:00",
+      "committerTime": "2026-09-17T04:52:45+00:00",
+      "subject": "fix: qualify Concentrate AI 1.2.1 setup and precision checks"
+    },
     {
       "sha": "9be5801e5c1dce08344f52d91fdb5c822b60bba3",
       "authorTime": "2026-09-16T07:58:11+00:00",

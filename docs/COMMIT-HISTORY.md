@@ -1,8 +1,8 @@
 # Commit history
 
-Exported at **2026-09-17T04:45:25+00:00**.
+Exported at **2026-09-19T01:10:09+00:00**.
 
-History through `9be5801e5c1dce08344f52d91fdb5c822b60bba3`.
+History through `d9b9aae1f9dce23b2c64a2b84780fc6758d25b03`.
 
 Author and committer timestamps below come directly from Git, with their recorded UTC offsets. This export does not include the later commit that stores it; Git history remains authoritative. No historical work was backdated.
 
@@ -233,3 +233,9 @@ Author and committer timestamps below come directly from Git, with their recorde
 - Commit: [`9be5801e5c1dce08344f52d91fdb5c822b60bba3`](https://github.com/arcacomputer/openclaw-concentrateai/commit/9be5801e5c1dce08344f52d91fdb5c822b60bba3)
 - Author timestamp: `2026-09-16T07:58:11+00:00`
 - Committer timestamp: `2026-09-16T07:58:11+00:00`
+
+## fix: qualify Concentrate AI 1.2.1 setup and precision checks
+
+- Commit: [`d9b9aae1f9dce23b2c64a2b84780fc6758d25b03`](https://github.com/arcacomputer/openclaw-concentrateai/commit/d9b9aae1f9dce23b2c64a2b84780fc6758d25b03)
+- Author timestamp: `2026-09-17T04:52:45+00:00`
+- Committer timestamp: `2026-09-17T04:52:45+00:00`
