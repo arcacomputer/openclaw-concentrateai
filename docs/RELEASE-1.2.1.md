@@ -1,6 +1,6 @@
 # Version 1.2.1 release qualification
 
-Status: **published on ClawHub as concentrate-provider@1.2.1**. Registry publication and fresh installation, legacy migration and rollback were completed on 2026-09-17. Public registry identity and clean scan were rechecked on 2026-09-18. No npm publication. The documentation handoff previously failed to reflect the completed registry work; the historical qualification below is preserved. See [distribution evidence](CLAWHUB-RELEASE-1.2.1.json).
+Status: **published on ClawHub as concentrate-provider@1.2.1**. Registry publication and fresh installation, legacy migration and rollback were completed on 2026-09-17. Public registry identity and clean scan were rechecked on 2026-09-19. No npm publication. The documentation handoff previously failed to reflect the completed registry work; the historical qualification below is preserved. See [distribution evidence](CLAWHUB-RELEASE-1.2.1.json).
 
 This patch fixes safe end-of-input cancellation in setup and corrects test-harness billing classification. New acceptance checks separate plain responses from JSON, controlled image content from formatting, and reasoning configuration from quality. See the [support contract](PRODUCTION-SUPPORT.md).
 
@@ -39,7 +39,7 @@ The final package SHA-256 is `d92dc7d5002d29dea2efa7f11811b4b2a15cf2e5dbc79320ba
 
 After the remote proof, only this release report was updated and the source-verification JSON was added. Both are outside the installed package; no runtime, test, harness or packed file changed. GitHub's CodeQL check is separate from the full suite executed on Blaxel. Registry qualification was completed afterward, as recorded below.
 
-## Distribution gates: completed, reconciled 2026-09-18
+## Distribution gates: completed, reconciled 2026-09-19
 
 - Published immutable 1.2.1, owner `felirami`, source `d9b9aae1f9dce23b2c64a2b84780fc6758d25b03`; ClawScan and TruffleHog clean.
 - Public artifact SHA-256 matches the final tested package above.

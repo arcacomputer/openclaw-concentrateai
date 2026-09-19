@@ -2,7 +2,7 @@
 
 An MIT-licensed provider plugin maintained by [Arca Computer](https://arca.computer). Connect OpenClaw to Concentrate's Responses API with streaming, tools, reasoning, structured output and image input, where the selected upstream model supports them.
 
-**Version 1.2.1 is published on ClawHub**, with a clean registry scan and verified fresh installation, legacy migration and rollback. Public registry status was rechecked on 2026-09-18. See the [1.2.1 verification report](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.2.1.md) for exact artifact identities and completed checks. No npm release is claimed; `private: true` prevents accidental npm publication.
+**Version 1.2.1 is published on ClawHub**, with a clean registry scan and verified fresh installation, legacy migration and rollback. Public registry status was rechecked on 2026-09-19. See the [1.2.1 verification report](https://github.com/arcacomputer/openclaw-concentrateai/blob/main/docs/RELEASE-1.2.1.md) for exact artifact identities and completed checks. No npm release is claimed; `private: true` prevents accidental npm publication.
 
 AI-assisted development, human stewardship by Luis Felipe Abarca. This is an independent integration, not an endorsement by Concentrate or the OpenClaw Foundation.
 

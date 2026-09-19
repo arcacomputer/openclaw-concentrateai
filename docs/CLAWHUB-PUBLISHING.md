@@ -45,7 +45,7 @@ Trusted GitHub Actions publishing is optional follow-up, not automatic: initial 
 
 ## Current status
 
-**concentrate-provider 1.2.1 is published**, with clean public scan state rechecked on 2026-09-18. Fresh registry installation, legacy migration and rollback passed on 2026-09-17; see `CLAWHUB-RELEASE-1.2.1.json`. Historical 1.2.0 artifact identity was checked on 2026-09-16. The old statement that 1.1.0 was the latest release was a documentation error. See [1.2.0](RELEASE-1.2.0.md) and [the new 1.2.1 qualification](RELEASE-1.2.1.md). Fresh installation/migration/rollback evidence for 1.1.0 remains in [its historical report](RELEASE-1.1.0.md); it is not automatically evidence for a new patch.
+**concentrate-provider 1.2.1 is published**, with clean public scan state rechecked on 2026-09-19. Fresh registry installation, legacy migration and rollback passed on 2026-09-17; see `CLAWHUB-RELEASE-1.2.1.json`. Historical 1.2.0 artifact identity was checked on 2026-09-16. The old statement that 1.1.0 was the latest release was a documentation error. See [1.2.0](RELEASE-1.2.0.md) and [the new 1.2.1 qualification](RELEASE-1.2.1.md). Fresh installation/migration/rollback evidence for 1.1.0 remains in [its historical report](RELEASE-1.1.0.md); it is not automatically evidence for a new patch.
 
 ## Historical 1.0.1 status
 
